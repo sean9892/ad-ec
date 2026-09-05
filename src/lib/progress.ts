@@ -19,3 +19,7 @@ export function readProgress(raw: string | null, ids: readonly string[]): SavedP
 export function toggleCompleted(completed: readonly string[], id: string): string[] {
   return completed.includes(id) ? completed.filter(value => value !== id) : [...completed, id]
 }
+
+export function nextAfterAchievement(index: number, total: number, wasCompleted: boolean, autoAdvance: boolean): number | null {
+  return autoAdvance && !wasCompleted && index >= 0 && index < total - 1 ? index + 1 : null
+}
