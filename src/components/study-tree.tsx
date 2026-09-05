@@ -2,12 +2,15 @@ import { useEffect, useId, useRef, useState } from 'react'
 import { ChevronDown, Workflow } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { routeColors, studyDiagram, studyRoutes } from '@/lib/studies'
+import { studyGridLayout } from '@/lib/study-layout'
 
 const loadMermaid = () => import('mermaid').then(({ default: mermaid }) => {
-  mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'dark', fontFamily: 'Inter Variable, sans-serif', flowchart: { htmlLabels: false, useMaxWidth: false, nodeSpacing: 20, rankSpacing: 26 } })
+  mermaid.registerLayoutLoaders([studyGridLayout])
+  mermaid.initialize({ layout: 'time-study-grid', startOnLoad: false, securityLevel: 'strict', theme: 'dark', fontFamily: 'Inter Variable, sans-serif', flowchart: { htmlLabels: false, useMaxWidth: false, nodeSpacing: 20, rankSpacing: 26 } })
   return mermaid
 })
 let renderer: ReturnType<typeof loadMermaid> | undefined
+let lastPan: { left: number; top: number } | undefined
 function Diagram({ studies }: { studies: number[] }) {
   const id=useId().replace(/[^a-zA-Z0-9]/g,'')
   const viewport = useRef<HTMLDivElement>(null)
@@ -24,10 +27,16 @@ function Diagram({ studies }: { studies: number[] }) {
   },[id,source])
   useEffect(() => {
     const element = viewport.current
-    if (element && svg) element.scrollLeft = Math.max(0, (element.scrollWidth - element.clientWidth) / 2)
+    if (element && svg) {
+      element.scrollLeft = lastPan?.left ?? Math.max(0, (element.scrollWidth - element.clientWidth) / 2)
+      element.scrollTop = lastPan?.top ?? 0
+    }
   }, [svg])
   const endDrag = () => { drag.current = null; setDragging(false) }
   return <div ref={viewport} className={`study-diagram ${dragging ? 'is-dragging' : ''}`} tabIndex={0} role="region" aria-label="Full Time Study tree. Drag or scroll to explore. Gray studies are not bought."
+    onScroll={event => {
+      if (svg) lastPan = { left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop }
+    }}
     onPointerDown={event => {
       if (event.button !== 0 || !event.isPrimary) return
       const element = event.currentTarget
