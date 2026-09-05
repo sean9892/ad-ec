@@ -113,8 +113,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .objective-description p { margin: 0 0 16px; }
 .objective-description p:last-child { margin-bottom: 0; }
 .requirement-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
-.resource-badge.cn-badge { color: var(--resource-color); background: #000; border: 1px solid color-mix(in srgb, var(--resource-color) 35%, transparent); border-radius: 6px; font-size: .875rem; font-weight: 500; height: auto; max-width: 100%; padding: 5px 9px; line-height: 1.5; letter-spacing: 0; font-variant-numeric: tabular-nums; white-space: normal; overflow-wrap: anywhere; flex-wrap: wrap; justify-content: flex-start; }
-.requirement-label { color: #b9adbF; font-size: .8125rem; }
+.resource-badge.cn-badge { color: var(--resource-foreground); background: var(--resource-color); border: 1px solid var(--resource-color); border-radius: 6px; font-size: .875rem; font-weight: 500; height: auto; max-width: 100%; padding: 5px 9px; line-height: 1.5; letter-spacing: 0; font-variant-numeric: tabular-nums; white-space: normal; overflow-wrap: anywhere; flex-wrap: wrap; justify-content: flex-start; }
 .challenge-duration { display: flex; align-items: center; gap: 6px; margin: 0 0 15px; color: #ad9ab8; font-size: .8125rem; }
 .objective-summary { margin: 0; color: #c1b3ca; font-size: 1rem; line-height: 1.7; }
 .objective-summary .resource-badge, .objective-description .resource-badge { vertical-align: baseline; padding: 1px 6px; margin-block: 2px; }

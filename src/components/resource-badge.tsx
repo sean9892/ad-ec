@@ -4,10 +4,12 @@ import guide from '@/data/objectives.json'
 import { formatAmount, resourceSegments, type Requirement } from '@/lib/resources'
 
 export function ResourceBadge({ requirement }: { requirement: Requirement }) {
-  const { amount, resource, label } = requirement
-  return <Badge variant="outline" className="resource-badge" style={{ '--resource-color': guide.resourceColors[resource] } as CSSProperties}>
+  const { amount, resource } = requirement
+  return <Badge className="resource-badge" style={{
+    '--resource-color': guide.resourceColors[resource],
+    '--resource-foreground': resource === 'EP' ? '#FFFFFF' : '#000000',
+  } as CSSProperties}>
     <span>{formatAmount(amount)} {resource}</span>
-    {label && <span className="requirement-label">· {label}</span>}
   </Badge>
 }
 

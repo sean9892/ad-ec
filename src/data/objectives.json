@@ -5,11 +5,14 @@
     "AM": "#EA4335",
     "IP": "#FF6D01",
     "EP": "#D105C3",
-    "TT": "#FFFFFF"
+    "TT": "#46BDC6"
   },
   "resourceColorSource": {
     "sheet": "Eternity Start",
-    "cell": "B24"
+    "cell": "B24",
+    "overrides": {
+      "TT": "#46BDC6"
+    }
   },
   "objectives": [
     {
@@ -28,8 +31,7 @@
       "requirements": [
         {
           "amount": "1",
-          "resource": "EP",
-          "label": "TD1"
+          "resource": "EP"
         }
       ]
     },
@@ -49,18 +51,15 @@
       "requirements": [
         {
           "amount": "e426",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         },
         {
           "amount": "3",
-          "resource": "EP",
-          "label": "reward"
+          "resource": "EP"
         },
         {
           "amount": "9",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -95,28 +94,23 @@
       "requirements": [
         {
           "amount": "e80,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e400",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "2",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "11",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -136,18 +130,15 @@
       "requirements": [
         {
           "amount": "e100,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e500",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "4",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -167,23 +158,19 @@
       "requirements": [
         {
           "amount": "e120,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e600",
-          "resource": "IP",
-          "label": "TT purchase"
+          "resource": "IP"
         },
         {
           "amount": "e614",
-          "resource": "IP",
-          "label": "Eternity"
+          "resource": "IP"
         },
         {
           "amount": "8",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -203,23 +190,19 @@
       "requirements": [
         {
           "amount": "e120,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "8",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "17",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -284,13 +267,11 @@
       "requirements": [
         {
           "amount": "<100",
-          "resource": "EP",
-          "label": "TDs"
+          "resource": "EP"
         },
         {
           "amount": "500",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -325,8 +306,7 @@
       "requirements": [
         {
           "amount": "≤500",
-          "resource": "EP",
-          "label": "purchases"
+          "resource": "EP"
         }
       ]
     },
@@ -346,23 +326,19 @@
       "requirements": [
         {
           "amount": "e120,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "256",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "22",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -382,18 +358,15 @@
       "requirements": [
         {
           "amount": "300",
-          "resource": "EP",
-          "label": "autobuyer"
+          "resource": "EP"
         },
         {
           "amount": "2.5e4",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         },
         {
           "amount": "5e4",
-          "resource": "EP",
-          "label": "EU3"
+          "resource": "EP"
         }
       ]
     },
@@ -413,8 +386,7 @@
       "requirements": [
         {
           "amount": "e600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         }
       ]
     },
@@ -434,13 +406,11 @@
       "requirements": [
         {
           "amount": "e200,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e900",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         }
       ]
     },
@@ -475,23 +445,19 @@
       "requirements": [
         {
           "amount": "e220,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,100",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "6.55e4",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "40",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -526,23 +492,19 @@
       "requirements": [
         {
           "amount": "e220,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,100",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "6.55e4",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "40",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -577,18 +539,15 @@
       "requirements": [
         {
           "amount": "e260,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,200",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "2.62e5",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -608,8 +567,7 @@
       "requirements": [
         {
           "amount": "1.25e6",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -629,18 +587,15 @@
       "requirements": [
         {
           "amount": "e280,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,400",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "4.19e6",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -660,23 +615,19 @@
       "requirements": [
         {
           "amount": "e280,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,400",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "4.19e6",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "52",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -696,13 +647,11 @@
       "requirements": [
         {
           "amount": "e300,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,500",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         }
       ]
     },
@@ -722,23 +671,19 @@
       "requirements": [
         {
           "amount": "e300,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,500",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "4.19e6",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "54",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -758,13 +703,11 @@
       "requirements": [
         {
           "amount": "6.25e7",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         },
         {
           "amount": "1.34e8",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -784,18 +727,15 @@
       "requirements": [
         {
           "amount": "2.68e8",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "e320,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         }
       ]
     },
@@ -815,8 +755,7 @@
       "requirements": [
         {
           "amount": "5.37e8",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -836,23 +775,19 @@
       "requirements": [
         {
           "amount": "e320,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "5.37e8",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "63",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -872,8 +807,7 @@
       "requirements": [
         {
           "amount": "e1,600",
-          "resource": "IP",
-          "label": "run target"
+          "resource": "IP"
         }
       ]
     },
@@ -893,18 +827,15 @@
       "requirements": [
         {
           "amount": "e340,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,800",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.07e9",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -924,23 +855,19 @@
       "requirements": [
         {
           "amount": "e340,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,800",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.07e9",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "67",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -960,18 +887,15 @@
       "requirements": [
         {
           "amount": "e380,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e1,900",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "3.13e9",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -991,13 +915,11 @@
       "requirements": [
         {
           "amount": "e2,000",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.72e10",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1017,23 +939,19 @@
       "requirements": [
         {
           "amount": "1.74e10",
-          "resource": "EP",
-          "label": "TD2"
+          "resource": "EP"
         },
         {
           "amount": "e400,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,100",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "3.44e10",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1053,23 +971,19 @@
       "requirements": [
         {
           "amount": "e400,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,100",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "3.44e10",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "78",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -1089,18 +1003,15 @@
       "requirements": [
         {
           "amount": "e440,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,300",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.56e11",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -1120,18 +1031,15 @@
       "requirements": [
         {
           "amount": "6.87e10",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "e460,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,400",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         }
       ]
     },
@@ -1151,28 +1059,23 @@
       "requirements": [
         {
           "amount": "5.50e11",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "2.82e11",
-          "resource": "EP",
-          "label": "TD1"
+          "resource": "EP"
         },
         {
           "amount": "e480,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,500",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "7.81e12",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -1192,13 +1095,11 @@
       "requirements": [
         {
           "amount": "<4e12",
-          "resource": "EP",
-          "label": "TDs"
+          "resource": "EP"
         },
         {
           "amount": "4.40e12",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1218,23 +1119,19 @@
       "requirements": [
         {
           "amount": "e480,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,500",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "4.40e12",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "93",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -1254,23 +1151,19 @@
       "requirements": [
         {
           "amount": "e520,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,700",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "7.63e12",
-          "resource": "EP",
-          "label": "TD1"
+          "resource": "EP"
         },
         {
           "amount": "3.52e13",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1290,23 +1183,19 @@
       "requirements": [
         {
           "amount": "e520,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,700",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "3.52e13",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "100",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -1326,18 +1215,15 @@
       "requirements": [
         {
           "amount": "e560,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e2,900",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "7.04e13",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1357,18 +1243,15 @@
       "requirements": [
         {
           "amount": "3.9e14",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         },
         {
           "amount": "e580,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "2.81e14",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1388,13 +1271,11 @@
       "requirements": [
         {
           "amount": "e600,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e3,100",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         }
       ]
     },
@@ -1414,13 +1295,11 @@
       "requirements": [
         {
           "amount": "5.63e14",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "1e16",
-          "resource": "EP",
-          "label": "upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -1440,18 +1319,15 @@
       "requirements": [
         {
           "amount": "e640,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e3,300",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.13e15",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1501,8 +1377,7 @@
       "requirements": [
         {
           "amount": "1.95e16",
-          "resource": "EP",
-          "label": "×5 upgrade"
+          "resource": "EP"
         }
       ]
     },
@@ -1522,23 +1397,19 @@
       "requirements": [
         {
           "amount": "3e17",
-          "resource": "EP",
-          "label": "reserve"
+          "resource": "EP"
         },
         {
           "amount": "e700,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e3,600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.44e17",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         }
       ]
     },
@@ -1558,23 +1429,19 @@
       "requirements": [
         {
           "amount": "e700,000",
-          "resource": "AM",
-          "label": ""
+          "resource": "AM"
         },
         {
           "amount": "e3,600",
-          "resource": "IP",
-          "label": ""
+          "resource": "IP"
         },
         {
           "amount": "1.44e17",
-          "resource": "EP",
-          "label": "TT purchase"
+          "resource": "EP"
         },
         {
           "amount": "130",
-          "resource": "TT",
-          "label": "total"
+          "resource": "TT"
         }
       ]
     },
@@ -1597,13 +1464,11 @@
       "requirements": [
         {
           "amount": "130",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e1,800",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Start an IC for the achievement, exit, then restart EC1."
@@ -1627,8 +1492,7 @@
       "requirements": [
         {
           "amount": "135",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -1652,13 +1516,11 @@
       "requirements": [
         {
           "amount": "135",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e975",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Wait for Time Shards when IP stalls."
@@ -1683,13 +1545,11 @@
       "requirements": [
         {
           "amount": "140",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         },
         {
           "amount": "1e18",
-          "resource": "EP",
-          "label": "recommended"
+          "resource": "EP"
         }
       ]
     },
@@ -1712,13 +1572,11 @@
       "requirements": [
         {
           "amount": "140",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "60000+ Eternities needed."
@@ -1742,13 +1600,11 @@
       "requirements": [
         {
           "amount": "140",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e600",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Unlock via TS73, buy EC3, then respec."
@@ -1773,13 +1629,11 @@
       "requirements": [
         {
           "amount": "142",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         },
         {
           "amount": "145",
-          "resource": "TT",
-          "label": "optional"
+          "resource": "TT"
         }
       ]
     },
@@ -1802,13 +1656,11 @@
       "requirements": [
         {
           "amount": "142",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,750",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Fail once, 145TT allows for TS21 to ease the challenge."
@@ -1832,8 +1684,7 @@
       "requirements": [
         {
           "amount": "147",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -1857,13 +1708,11 @@
       "requirements": [
         {
           "amount": "147",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e750",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -1887,13 +1736,11 @@
       "requirements": [
         {
           "amount": "147",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,200",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "TS62 is now unlocked and speeds up Replicanti."
@@ -1918,8 +1765,7 @@
       "requirements": [
         {
           "amount": "155",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -1942,13 +1788,11 @@
       "requirements": [
         {
           "amount": "155",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e675",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Unlock via TS73, buy EC3, then respec."
@@ -1972,8 +1816,7 @@
       "requirements": [
         {
           "amount": "157",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -1997,13 +1840,11 @@
       "requirements": [
         {
           "amount": "157",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,150",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2028,13 +1869,11 @@
       "requirements": [
         {
           "amount": "160",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         },
         {
           "amount": "163",
-          "resource": "TT",
-          "label": "optional"
+          "resource": "TT"
         }
       ]
     },
@@ -2057,13 +1896,11 @@
       "requirements": [
         {
           "amount": "160",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e850",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "163TT allows for TS21 to ease the challenge."
@@ -2088,8 +1925,7 @@
       "requirements": [
         {
           "amount": "163",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -2112,13 +1948,11 @@
       "requirements": [
         {
           "amount": "163",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,400",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2142,13 +1976,11 @@
       "requirements": [
         {
           "amount": "163",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e750",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Unlock via TS73, buy EC3, then respec."
@@ -2172,8 +2004,7 @@
       "requirements": [
         {
           "amount": "166",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2197,13 +2028,11 @@
       "requirements": [
         {
           "amount": "166",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e2,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "e500000AM can be farmed with challenge setup."
@@ -2228,13 +2057,11 @@
       "requirements": [
         {
           "amount": "170",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         },
         {
           "amount": "173",
-          "resource": "TT",
-          "label": "optional"
+          "resource": "TT"
         }
       ]
     },
@@ -2257,13 +2084,11 @@
       "requirements": [
         {
           "amount": "170",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,300",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "172TT / 173TT allows for TS33 / S62 to speed up the challenge."
@@ -2288,8 +2113,7 @@
       "requirements": [
         {
           "amount": "176",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -2312,13 +2136,11 @@
       "requirements": [
         {
           "amount": "175",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,850",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2342,13 +2164,11 @@
       "requirements": [
         {
           "amount": "176",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,100",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2372,13 +2192,11 @@
       "requirements": [
         {
           "amount": "176",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,600",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2402,8 +2220,7 @@
       "requirements": [
         {
           "amount": "182",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2427,13 +2244,11 @@
       "requirements": [
         {
           "amount": "182",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e1,150",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2457,13 +2272,11 @@
       "requirements": [
         {
           "amount": "182",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,325",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Do a normal Active EP run and buy this at the end."
@@ -2487,13 +2300,11 @@
       "requirements": [
         {
           "amount": "182",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e825",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Unlock via TS73, buy EC3, then respec."
@@ -2517,8 +2328,7 @@
       "requirements": [
         {
           "amount": "193",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2542,13 +2352,11 @@
       "requirements": [
         {
           "amount": "193",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,530",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Unlock via TS73, buy EC7, then respec."
@@ -2572,8 +2380,7 @@
       "requirements": [
         {
           "amount": "200",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2597,13 +2404,11 @@
       "requirements": [
         {
           "amount": "200",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,550",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2628,8 +2433,7 @@
       "requirements": [
         {
           "amount": "e3,590",
-          "resource": "IP",
-          "label": "switch target"
+          "resource": "IP"
         }
       ]
     },
@@ -2652,13 +2456,11 @@
       "requirements": [
         {
           "amount": "200",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e1,300",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "0RG; 9% RG Chance; Buy only ID1."
@@ -2682,13 +2484,11 @@
       "requirements": [
         {
           "amount": "200",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e900",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2712,13 +2512,11 @@
       "requirements": [
         {
           "amount": "200",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,350",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2742,13 +2540,11 @@
       "requirements": [
         {
           "amount": "200",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,500",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2772,8 +2568,7 @@
       "requirements": [
         {
           "amount": "215",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2797,13 +2592,11 @@
       "requirements": [
         {
           "amount": "215",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,950",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "214TT can work for EC5x4, 215TT is for EC7x3."
@@ -2827,13 +2620,11 @@
       "requirements": [
         {
           "amount": "215",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,060",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Unlock via TS73, buy EC7, then respec."
@@ -2857,8 +2648,7 @@
       "requirements": [
         {
           "amount": "240",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2882,13 +2672,11 @@
       "requirements": [
         {
           "amount": "240",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,675",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2912,8 +2700,7 @@
       "requirements": [
         {
           "amount": "245+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -2937,13 +2724,11 @@
       "requirements": [
         {
           "amount": "245",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,350",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "252TT can get TS31 + TS41 for full tree."
@@ -2967,13 +2752,11 @@
       "requirements": [
         {
           "amount": "245",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e4,400",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -2997,8 +2780,7 @@
       "requirements": [
         {
           "amount": "264",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3022,13 +2804,11 @@
       "requirements": [
         {
           "amount": "264",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,600",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -3052,13 +2832,11 @@
       "requirements": [
         {
           "amount": "264",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,590",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -3082,8 +2860,7 @@
       "requirements": [
         {
           "amount": "310",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3107,13 +2884,11 @@
       "requirements": [
         {
           "amount": "310",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,200",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "0RG; 9% RG Chance; Buy only ID1."
@@ -3138,13 +2913,11 @@
       "requirements": [
         {
           "amount": "1e40",
-          "resource": "EP",
-          "label": "upgrade"
+          "resource": "EP"
         },
         {
           "amount": "320",
-          "resource": "TT",
-          "label": "approximate"
+          "resource": "TT"
         }
       ]
     },
@@ -3167,13 +2940,11 @@
       "requirements": [
         {
           "amount": "320+",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,850",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "1e40EP Eternity Upgrade required."
@@ -3198,8 +2969,7 @@
       "requirements": [
         {
           "amount": "370",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -3222,13 +2992,11 @@
       "requirements": [
         {
           "amount": "370",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e4,950",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Can be done with TS71 path 7TT earlier."
@@ -3253,8 +3021,7 @@
       "requirements": [
         {
           "amount": "450",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -3277,13 +3044,11 @@
       "requirements": [
         {
           "amount": "450",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,100",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "4RG; 9% RG Chance; Buy only ID1; Delay TS133 until the final push."
@@ -3307,8 +3072,7 @@
       "requirements": [
         {
           "amount": "522",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3332,13 +3096,11 @@
       "requirements": [
         {
           "amount": "522",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e1,750",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Wait for Time Shards when IP stalls."
@@ -3362,8 +3124,7 @@
       "requirements": [
         {
           "amount": "575",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3387,13 +3148,11 @@
       "requirements": [
         {
           "amount": "575",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Wait for Time Shards when IP stalls."
@@ -3418,8 +3177,7 @@
       "requirements": [
         {
           "amount": "600",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -3442,13 +3200,11 @@
       "requirements": [
         {
           "amount": "600",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e4,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "4RG; 9% RG Chance; Buy only ID1; Delay TS133 until the final push."
@@ -3472,8 +3228,7 @@
       "requirements": [
         {
           "amount": "660",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3497,13 +3252,11 @@
       "requirements": [
         {
           "amount": "660",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,250",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Wait for Time Shards when IP stalls."
@@ -3527,8 +3280,7 @@
       "requirements": [
         {
           "amount": "760",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3552,13 +3304,11 @@
       "requirements": [
         {
           "amount": "760",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,500",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Crunch a bit at the end for TS141."
@@ -3583,8 +3333,7 @@
       "requirements": [
         {
           "amount": "825",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -3607,13 +3356,11 @@
       "requirements": [
         {
           "amount": "825",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e4,900",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "0RG; 9% RG Chance; Buy only ID1."
@@ -3637,8 +3384,7 @@
       "requirements": [
         {
           "amount": "830+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3662,13 +3408,11 @@
       "requirements": [
         {
           "amount": "830",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e2,750",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Crunch a bit at the end for TS141."
@@ -3692,8 +3436,7 @@
       "requirements": [
         {
           "amount": "858+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3717,13 +3460,11 @@
       "requirements": [
         {
           "amount": "858",
-          "resource": "TT",
-          "label": "required"
+          "resource": "TT"
         },
         {
           "amount": "e3,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Farm Infinities inside EC10."
@@ -3747,13 +3488,11 @@
       "requirements": [
         {
           "amount": "858",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e4,120",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -3778,8 +3517,7 @@
       "requirements": [
         {
           "amount": "1820+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -3803,8 +3541,7 @@
       "requirements": [
         {
           "amount": "1292",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -3827,13 +3564,11 @@
       "requirements": [
         {
           "amount": "1820",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,300",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Have 10M+ Infinities Banked."
@@ -3857,8 +3592,7 @@
       "requirements": [
         {
           "amount": "2050",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3901,13 +3635,11 @@
       "requirements": [
         {
           "amount": "2050",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,600",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Have 20M+ Infinities Banked."
@@ -3931,8 +3663,7 @@
       "requirements": [
         {
           "amount": "2142",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3956,8 +3687,7 @@
       "requirements": [
         {
           "amount": "2272",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -3981,8 +3711,7 @@
       "requirements": [
         {
           "amount": "2740+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4006,13 +3735,11 @@
       "requirements": [
         {
           "amount": "2740+",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e3,900",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Have 35M+ Infinities Banked."
@@ -4036,13 +3763,11 @@
       "requirements": [
         {
           "amount": "2886+",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e450",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4066,8 +3791,7 @@
       "requirements": [
         {
           "amount": "3542",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4091,13 +3815,11 @@
       "requirements": [
         {
           "amount": "3615+",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e4,200",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": "Have 45M+ Infinities Banked."
@@ -4121,8 +3843,7 @@
       "requirements": [
         {
           "amount": "3712",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4146,8 +3867,7 @@
       "requirements": [
         {
           "amount": "3925",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": "Use TS201 to add the TS72 path."
@@ -4171,8 +3891,7 @@
       "requirements": [
         {
           "amount": "4870+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4196,13 +3915,11 @@
       "requirements": [
         {
           "amount": "4870+",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e650",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4226,8 +3943,7 @@
       "requirements": [
         {
           "amount": "4945",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": "Use TS201 to add the TS72 path."
@@ -4251,8 +3967,7 @@
       "requirements": [
         {
           "amount": "5907+",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4276,13 +3991,11 @@
       "requirements": [
         {
           "amount": "5950",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e850",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4306,13 +4019,11 @@
       "requirements": [
         {
           "amount": "5950",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,050",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4336,13 +4047,11 @@
       "requirements": [
         {
           "amount": "5950",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e1,250",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4367,8 +4076,7 @@
       "requirements": [
         {
           "amount": "9800",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -4391,13 +4099,11 @@
       "requirements": [
         {
           "amount": "9800",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e110,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4421,13 +4127,11 @@
       "requirements": [
         {
           "amount": "9800",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e122,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4451,8 +4155,7 @@
       "requirements": [
         {
           "amount": "10750",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4476,13 +4179,11 @@
       "requirements": [
         {
           "amount": "10750",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e134,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4507,8 +4208,7 @@
       "requirements": [
         {
           "amount": "11200",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ]
     },
@@ -4531,13 +4231,11 @@
       "requirements": [
         {
           "amount": "11200",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e146,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
@@ -4561,8 +4259,7 @@
       "requirements": [
         {
           "amount": "12350",
-          "resource": "TT",
-          "label": ""
+          "resource": "TT"
         }
       ],
       "summary": ""
@@ -4586,13 +4283,11 @@
       "requirements": [
         {
           "amount": "12350",
-          "resource": "TT",
-          "label": "recommended"
+          "resource": "TT"
         },
         {
           "amount": "e158,000",
-          "resource": "IP",
-          "label": "goal"
+          "resource": "IP"
         }
       ],
       "summary": ""
