@@ -36,12 +36,7 @@ export function studyDiagram(studies: number[]): string {
   const selected = new Set(studies)
   const lines = ['flowchart TD', 'accTitle: Full Time Study tree', 'accDescr: Colored studies belong to this objective setup. Gray studies are not bought.']
   for (const id of allStudies) lines.push(`s${id}["TS${id}"]`)
-  for (const [from, to] of connections) {
-    // Stagger the eight row-22 choices over two ranks, keeping the viewer compact
-    // without adding imaginary prerequisite edges between alternative studies.
-    const stagger = (to >= 221 && to <= 228 && to % 2 === 0) || (from >= 221 && from <= 228 && from % 2 === 1)
-    lines.push(`s${from} ${stagger ? '--->' : '-->'} s${to}`)
-  }
+  for (const [from, to] of connections) lines.push(`s${from} --> s${to}`)
   // EC10 completion is the actual gate between TS181 and row 19.
   const pastEC10 = studies.some(id => id >= 191)
   lines.push('ec10["EC10 gate"]', 's181 --> ec10')

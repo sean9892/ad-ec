@@ -64,4 +64,6 @@ Resource badges identify Antimatter, Infinity, or Time paths; Activeness badges 
 
 References: [Steam screenshots](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/) for vertical branching layout, [official study connections](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/src/core/time-studies/time-study-connections.js) for topology, and [official study colors](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/public/stylesheets/time-studies.css).
 
-Validation: 13 unit tests and the TypeScript/production build pass. Browser interaction testing was not performed.
+Validation: `npm test` includes Mermaid rendering in jsdom to verify fixed node coordinates, gray/bought colors, connector styling, and identical viewport bounds across setups. jsdom supplies only final SVG bounds; node placement uses the production layout renderer. Browser interaction testing was not performed.
+
+The Mermaid `time-study-grid` layout uses the game's normal, pre-Reality [row and column definitions](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/src/components/tabs/time-studies/time-study-tree-layout.js). It preserves reserved challenge slots, the eight-node TS221–228 row, normal/wide node proportions, and straight connectors. Node coordinates and sizes never depend on purchases, label measurements, or viewport width. Pan position is retained while moving between objectives.
