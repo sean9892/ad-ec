@@ -56,7 +56,7 @@ The shadcn component license is included in `LICENSE-shadcn.md`.
 
 ## Time Study trees and navigation
 
-Sidebar sections collapse independently; desktop and mobile share section state. Eternity Start trees open by default and show the end-of-objective snapshot, with new studies marked NEW. Challenge trees start collapsed. Mermaid loads when an active card needs a diagram, in a separate scrollable viewport.
+Sidebar sections collapse independently; desktop and mobile share section state. Eternity Start trees open by default and show the end-of-objective snapshot, with the full tree visible and unbought studies gray. Challenge trees start collapsed. Mermaid loads when an active card needs a diagram, in a separate viewport supporting mouse/touch drag-to-pan, scrolling, and keyboard navigation.
 
 `src/data/early-studies.json` records all 56 early snapshots, including incremental purchases and respec removals. Row 56 uses the guide's recommended Active alternative. Multi-stage objectives show their final setup; intermediate steps remain in Guide details. This curated data is independent of workbook extraction.
 

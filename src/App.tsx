@@ -82,7 +82,7 @@ function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComple
         {objective.duration && <div className="challenge-duration"><Clock3 size={14} />{objective.duration.replaceAll('~', '–')}</div>}
         {objective.summary && <p className="objective-summary"><ResourceText text={objective.summary} /></p>}
         {objective.kind === 'challenge' && <RouteBadges studies={studies} />}
-        {(early || studies.length > 0) && <StudyTree studies={studies} added={early?.added} early={!!early} active={active} />}
+        {(early || studies.length > 0) && <StudyTree studies={studies} early={!!early} active={active} />}
         {objective.description !== objective.title && <details className="guide-details"><summary>Guide details<ChevronDown size={14} /></summary><div className="objective-description">{objective.description.split('\n\n').map((text, paragraph) => <p key={paragraph}><ResourceText text={text} /></p>)}</div></details>}
       </div>
       <div className="card-actions">

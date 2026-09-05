@@ -232,3 +232,5 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .study-ids > summary { padding:4px 0; }
 .study-setup[open] > summary > svg:last-child { transform:rotate(180deg); }
 @media (max-width:600px) { .study-diagram { height:240px; } }
+.study-diagram { cursor:grab; touch-action:none; user-select:none; }
+.study-diagram.is-dragging { cursor:grabbing; }
