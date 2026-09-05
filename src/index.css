@@ -2,6 +2,7 @@
 @import 'tw-animate-css';
 @import './preset-theme.css';
 @import './preset-nova.css';
+@import './preset-badge.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -67,7 +68,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .objective-link:hover { color: var(--foreground); background: #ffffff05; }
 .objective-link[aria-current='step'] { color: #f6d2fb; background: #c026d319; border-color: #e879f922; }
 .objective-link[aria-current='step']::before { content: ''; position: absolute; width: 3px; top: 13px; bottom: 13px; left: -1px; border-radius: 3px; background: #d966e8; }
-.objective-link-title { font-size: .875rem; line-height: 1.5; font-weight: 400; }
+.objective-link-title { font-size: .875rem; line-height: 1.6; font-weight: 400; }
+.objective-link-title .resource-badge.cn-badge { font-size: .8125rem; padding: 1px 6px; line-height: 1.5; vertical-align: baseline; margin-block: 1px; }
 .step-indicator { width: 16px; height: 16px; border: 1px solid #66596a; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; margin-top: 3px; }
 [aria-current='step'] .step-indicator { border-color: #d879e6; }
 .step-indicator > span { width: 6px; height: 6px; background: #d879e6; border-radius: 50%; }
@@ -101,7 +103,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .caption-line { width: 25px; height: 1px; background: #ae8fb331; }
 .objective-card.cn-card { padding: 0; gap: 0; border: 1px solid #68416f78; border-radius: 14px; overflow: hidden; background: var(--card); box-shadow: 0 16px 60px #00000024, 0 0 48px #ba39ce05; }
 .card-topline { display: flex; justify-content: space-between; align-items: center; padding: 24px 30px 0; gap: 12px; }
-.kind-badge { border: 1px solid #ce79dc26; background: #bd32d20b; color: #d1a5db; font-size: .75rem; padding: 5px 9px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; line-height: 1.4; }
+.kind-badge.cn-badge { height: auto; border: 1px solid #ce79dc26; background: #bd32d20b; color: #d1a5db; font-size: .75rem; padding: 5px 9px; border-radius: 5px; display: inline-flex; align-items: center; gap: 6px; line-height: 1.4; }
 .card-number { color: #c5b3cd; font-size: .75rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .card-number > span { color: #89768f; }
 .card-body { padding: 30px 30px 32px; }
@@ -110,9 +112,17 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .objective-description { color: #b5a6bf; font-size: 1rem; line-height: 1.75; }
 .objective-description p { margin: 0 0 16px; }
 .objective-description p:last-child { margin-bottom: 0; }
-.challenge-stats { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-bottom: 22px; color: #d4c0de; font-size: .875rem; }
-.challenge-stats span { display: inline-flex; align-items: center; gap: 6px; }
-.challenge-stats svg { color: #a286ae; }
+.requirement-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.resource-badge.cn-badge { color: var(--resource-color); background: #000; border: 1px solid color-mix(in srgb, var(--resource-color) 35%, transparent); border-radius: 6px; font-size: .875rem; font-weight: 500; height: auto; max-width: 100%; padding: 5px 9px; line-height: 1.5; letter-spacing: 0; font-variant-numeric: tabular-nums; white-space: normal; overflow-wrap: anywhere; flex-wrap: wrap; justify-content: flex-start; }
+.requirement-label { color: #b9adbF; font-size: .8125rem; }
+.challenge-duration { display: flex; align-items: center; gap: 6px; margin: 0 0 15px; color: #ad9ab8; font-size: .8125rem; }
+.objective-summary { margin: 0; color: #c1b3ca; font-size: 1rem; line-height: 1.7; }
+.objective-summary .resource-badge, .objective-description .resource-badge { vertical-align: baseline; padding: 1px 6px; margin-block: 2px; }
+.guide-details { margin-top: 20px; }
+.guide-details > summary { width: fit-content; display: flex; align-items: center; gap: 7px; color: #a996b4; font-size: .8125rem; list-style: none; padding-block: 4px; }
+.guide-details > summary::-webkit-details-marker { display: none; }
+.guide-details[open] > summary svg { transform: rotate(180deg); }
+.guide-details .objective-description { margin-top: 12px; padding-top: 14px; border-top: 1px solid var(--border); }
 .study-setup { margin-top: 22px; background: #0c071226; border: 1px solid #af83c01a; border-radius: 7px; }
 .study-setup summary { display: flex; align-items: center; gap: 8px; padding: 12px 14px; color: #cfb9d9; font-size: .875rem; list-style: none; }
 .study-setup summary::-webkit-details-marker { display: none; }

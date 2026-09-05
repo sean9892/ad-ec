@@ -1,6 +1,16 @@
 {
   "sourceUrl": "https://docs.google.com/spreadsheets/d/1NrYADsW4s7wRYTE91Z0EFHbXcHaswuuMzG9a2WyGG0A/edit?gid=1524747248#gid=1524747248",
   "sourceFile": "Antimatter Dimensions - Eternity and Eternity Challenges (1).xlsx",
+  "resourceColors": {
+    "AM": "#EA4335",
+    "IP": "#FF6D01",
+    "EP": "#D105C3",
+    "TT": "#FFFFFF"
+  },
+  "resourceColorSource": {
+    "sheet": "Eternity Start",
+    "cell": "B24"
+  },
   "objectives": [
     {
       "id": "eternity-10",
@@ -12,7 +22,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 10
-      }
+      },
+      "shortTitle": "Buy TD1",
+      "summary": "Enable auto ×2 IP, break Infinity, and clear normal challenges + ICs.",
+      "requirements": [
+        {
+          "amount": "1",
+          "resource": "EP",
+          "label": "TD1"
+        }
+      ]
     },
     {
       "id": "eternity-14",
@@ -24,7 +43,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 14
-      }
+      },
+      "shortTitle": "Earn your next EP",
+      "summary": "Spend TT on TS11, TS21, TS22, and TS33.",
+      "requirements": [
+        {
+          "amount": "e426",
+          "resource": "IP",
+          "label": "goal"
+        },
+        {
+          "amount": "3",
+          "resource": "EP",
+          "label": "reward"
+        },
+        {
+          "amount": "9",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-15",
@@ -36,7 +74,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 15
-      }
+      },
+      "shortTitle": "Enable Time Study respec",
+      "summary": "Enable respec before your next Eternity to refund your TT.",
+      "requirements": []
     },
     {
       "id": "eternity-16",
@@ -48,7 +89,36 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 16
-      }
+      },
+      "shortTitle": "Get TS42",
+      "summary": "Buy both EP theorems, then use TS11 → TS22 → TS32 → TS42.",
+      "requirements": [
+        {
+          "amount": "e80,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e400",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "2",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "11",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-22",
@@ -60,7 +130,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 22
-      }
+      },
+      "shortTitle": "Get TS51",
+      "summary": "Buy the EP theorem, then TS51.",
+      "requirements": [
+        {
+          "amount": "e100,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e500",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "4",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-23",
@@ -72,7 +161,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 23
-      }
+      },
+      "shortTitle": "Get TS61",
+      "summary": "Use Replicanti Galaxies to push further. Eternity, buy the EP theorem, then TS61.",
+      "requirements": [
+        {
+          "amount": "e120,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e600",
+          "resource": "IP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "e614",
+          "resource": "IP",
+          "label": "Eternity"
+        },
+        {
+          "amount": "8",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-24",
@@ -84,7 +197,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 24
-      }
+      },
+      "shortTitle": "Buy Time Theorems",
+      "summary": "Use TS11 → TS22 → TS32 → TS42 → TS51 → TS61.",
+      "requirements": [
+        {
+          "amount": "e120,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e600",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "8",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "17",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-28",
@@ -96,7 +233,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 28
-      }
+      },
+      "shortTitle": "Reach EM5",
+      "summary": "Buy available upgrades and IDs. Set autocrunch to 1e10 × highest.",
+      "requirements": []
     },
     {
       "id": "eternity-29",
@@ -108,7 +248,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 29
-      }
+      },
+      "shortTitle": "Reach EM7",
+      "summary": "Clear ICs except IC5, set autocrunch to 1e20, and buy EU1 + EU2.",
+      "requirements": []
     },
     {
       "id": "eternity-30",
@@ -120,7 +263,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 30
-      }
+      },
+      "shortTitle": "Reach EM9",
+      "summary": "Set Galaxy autobuyer to 0s and Max Dimboost to 0.4s. Try for R104.",
+      "requirements": []
     },
     {
       "id": "eternity-31",
@@ -132,7 +278,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 31
-      }
+      },
+      "shortTitle": "Buy the ×5 EP upgrade",
+      "summary": "Buy cheaper Time Dimensions first, then the EP multiplier.",
+      "requirements": [
+        {
+          "amount": "<100",
+          "resource": "EP",
+          "label": "TDs"
+        },
+        {
+          "amount": "500",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-32",
@@ -144,7 +304,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 32
-      }
+      },
+      "shortTitle": "Reach EM25",
+      "summary": "Enable Replicanti autobuyers as they unlock.",
+      "requirements": []
     },
     {
       "id": "eternity-33",
@@ -156,7 +319,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 33
-      }
+      },
+      "shortTitle": "Get TS71 and reach EM100",
+      "summary": "Buy affordable TDs and TT, then unlock the Eternity autobuyer.",
+      "requirements": [
+        {
+          "amount": "≤500",
+          "resource": "EP",
+          "label": "purchases"
+        }
+      ]
     },
     {
       "id": "eternity-34",
@@ -168,7 +340,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 34
-      }
+      },
+      "shortTitle": "Buy Time Theorems",
+      "summary": "Use the study tree through TS71.",
+      "requirements": [
+        {
+          "amount": "e120,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e600",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "256",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "22",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-37",
@@ -180,7 +376,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 37
-      }
+      },
+      "shortTitle": "Buy the ×5 EP upgrade and EU3",
+      "summary": "At 100 Eternities, set the autobuyer target; buy the multiplier before EU3.",
+      "requirements": [
+        {
+          "amount": "300",
+          "resource": "EP",
+          "label": "autobuyer"
+        },
+        {
+          "amount": "2.5e4",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        },
+        {
+          "amount": "5e4",
+          "resource": "EP",
+          "label": "EU3"
+        }
+      ]
     },
     {
       "id": "eternity-38",
@@ -192,7 +407,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 38
-      }
+      },
+      "shortTitle": "Get “Never Again”",
+      "summary": "Disable auto-Eternity, reach the IP target, then rerun every IC with retry enabled.",
+      "requirements": [
+        {
+          "amount": "e600",
+          "resource": "IP",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "eternity-39",
@@ -204,7 +428,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 39
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Reach max Replicanti Galaxies before crunching. Spend earned EP on TDs.",
+      "requirements": [
+        {
+          "amount": "e200,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e900",
+          "resource": "IP",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "eternity-40",
@@ -216,7 +454,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 40
-      }
+      },
+      "shortTitle": "Get TS81 → TS91 → TS101",
+      "summary": "Add TS21, then TS33 with spare TT. Prioritize the next main-path study.",
+      "requirements": []
     },
     {
       "id": "eternity-41",
@@ -228,7 +469,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 41
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "Farm EP between long runs; buy cheaper TDs before the final EP theorem.",
+      "requirements": [
+        {
+          "amount": "e220,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,100",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "6.55e4",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "40",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-42",
@@ -240,7 +505,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 42
-      }
+      },
+      "shortTitle": "Get a 3–4s Eternity",
+      "summary": "Set auto-Eternity to 0. Test crunch targets from 1e25 to 1e65; try holding M.",
+      "requirements": []
     },
     {
       "id": "eternity-43",
@@ -252,7 +520,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 43
-      }
+      },
+      "shortTitle": "Switch to the ID path",
+      "summary": "Respec into TS72 → TS82 → TS92 → TS102.",
+      "requirements": [
+        {
+          "amount": "e220,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,100",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "6.55e4",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "40",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-46",
@@ -264,7 +556,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 46
-      }
+      },
+      "shortTitle": "Improve your fastest Eternity",
+      "summary": "Aim for mid-3s, then disable auto-Eternity and resume EP farming.",
+      "requirements": []
     },
     {
       "id": "eternity-47",
@@ -276,7 +571,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 47
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Try 1e35–1e40 autocrunch. Buy cheaper TDs, then make a long push.",
+      "requirements": [
+        {
+          "amount": "e260,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,200",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "2.62e5",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-48",
@@ -288,7 +602,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 48
-      }
+      },
+      "shortTitle": "Get TS111",
+      "summary": "Respec to the AD path through TS111, then farm the next EP multiplier.",
+      "requirements": [
+        {
+          "amount": "1.25e6",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-49",
@@ -300,7 +623,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 49
-      }
+      },
+      "shortTitle": "Get TS21 + TS33",
+      "summary": "Buy cheaper TDs, push AM/IP, then farm the EP theorem.",
+      "requirements": [
+        {
+          "amount": "e280,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,400",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "4.19e6",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-50",
@@ -312,7 +654,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 50
-      }
+      },
+      "shortTitle": "Switch to the ID path",
+      "summary": "Respec into the ID path through TS111.",
+      "requirements": [
+        {
+          "amount": "e280,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,400",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "4.19e6",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "52",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-51",
@@ -324,7 +690,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 51
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Improve your fastest Eternity to boost TS92, then make a long run.",
+      "requirements": [
+        {
+          "amount": "e300,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,500",
+          "resource": "IP",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "eternity-52",
@@ -336,7 +716,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 52
-      }
+      },
+      "shortTitle": "Get TS122",
+      "summary": "Respec into the AD path and add TS122.",
+      "requirements": [
+        {
+          "amount": "e300,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,500",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "4.19e6",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "54",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-55",
@@ -348,7 +752,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 55
-      }
+      },
+      "shortTitle": "Buy the ×5 EP upgrade",
+      "summary": "Farm EP, buy the multiplier, then add TS21 + TS33.",
+      "requirements": [
+        {
+          "amount": "6.25e7",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        },
+        {
+          "amount": "1.34e8",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-56",
@@ -360,7 +778,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 56
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Swap TS21 + TS33 for TS132; TS121 + TS131 is the preferred alternative.",
+      "requirements": [
+        {
+          "amount": "2.68e8",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "e320,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,600",
+          "resource": "IP",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "eternity-57",
@@ -372,7 +809,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 57
-      }
+      },
+      "shortTitle": "Buy the next EP theorem",
+      "summary": "Farm EP to prepare the Active tree.",
+      "requirements": [
+        {
+          "amount": "5.37e8",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-58",
@@ -384,7 +830,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 58
-      }
+      },
+      "shortTitle": "Unlock the Active tree",
+      "summary": "Respec into the AD path with TS121 → TS131 → TS141.",
+      "requirements": [
+        {
+          "amount": "e320,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,600",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "5.37e8",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "63",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-59",
@@ -396,7 +866,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 59
-      }
+      },
+      "shortTitle": "Set TS121 to 50×",
+      "summary": "Set up the bonus before each Active run; favor longer runs.",
+      "requirements": [
+        {
+          "amount": "e1,600",
+          "resource": "IP",
+          "label": "run target"
+        }
+      ]
     },
     {
       "id": "eternity-60",
@@ -408,7 +887,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 60
-      }
+      },
+      "shortTitle": "Get TS21",
+      "summary": "Buy cheaper TDs and the EP theorem, then push through the IP target.",
+      "requirements": [
+        {
+          "amount": "e340,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,800",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.07e9",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-61",
@@ -420,7 +918,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 61
-      }
+      },
+      "shortTitle": "Switch to the ID path",
+      "summary": "Cap TS92 at 1.07e9×, then respec through TS131.",
+      "requirements": [
+        {
+          "amount": "e340,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,800",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.07e9",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "67",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-64",
@@ -432,7 +954,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 64
-      }
+      },
+      "shortTitle": "Get TS141",
+      "summary": "Push with TS21, swap it for TS141, then buy the EP multiplier.",
+      "requirements": [
+        {
+          "amount": "e380,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e1,900",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "3.13e9",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-65",
@@ -444,7 +985,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 65
-      }
+      },
+      "shortTitle": "Buy EP theorems",
+      "summary": "Continue Active runs and buy cheaper TDs. Add TS21, then TS33.",
+      "requirements": [
+        {
+          "amount": "e2,000",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.72e10",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-66",
@@ -456,7 +1011,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 66
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Buy TD2, then push and purchase the EP theorem.",
+      "requirements": [
+        {
+          "amount": "1.74e10",
+          "resource": "EP",
+          "label": "TD2"
+        },
+        {
+          "amount": "e400,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,100",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "3.44e10",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-67",
@@ -468,7 +1047,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 67
-      }
+      },
+      "shortTitle": "Get TS151",
+      "summary": "Respec into the Active ID path through TS151.",
+      "requirements": [
+        {
+          "amount": "e400,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,100",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "3.44e10",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "78",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-68",
@@ -480,7 +1083,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 68
-      }
+      },
+      "shortTitle": "Get TS21",
+      "summary": "Push AM/IP, then farm the next EP multiplier.",
+      "requirements": [
+        {
+          "amount": "e440,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,300",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.56e11",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-69",
@@ -492,7 +1114,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 69
-      }
+      },
+      "shortTitle": "Get TS161",
+      "summary": "Add TS33, push AM/IP, then swap TS21 + TS33 for TS161.",
+      "requirements": [
+        {
+          "amount": "6.87e10",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "e460,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,400",
+          "resource": "IP",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "eternity-70",
@@ -504,7 +1145,36 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 70
-      }
+      },
+      "shortTitle": "Restore TS21 + TS33",
+      "summary": "Buy theorems and TD1, push AM/IP, then farm the next EP multiplier.",
+      "requirements": [
+        {
+          "amount": "5.50e11",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "2.82e11",
+          "resource": "EP",
+          "label": "TD1"
+        },
+        {
+          "amount": "e480,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,500",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "7.81e12",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-71",
@@ -516,7 +1186,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 71
-      }
+      },
+      "shortTitle": "Buy EP theorems",
+      "summary": "Buy cheaper TDs after the EP multiplier, then focus on TT.",
+      "requirements": [
+        {
+          "amount": "<4e12",
+          "resource": "EP",
+          "label": "TDs"
+        },
+        {
+          "amount": "4.40e12",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-72",
@@ -528,7 +1212,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 72
-      }
+      },
+      "shortTitle": "Get TS162",
+      "summary": "Respec into the Active ID path through TS162.",
+      "requirements": [
+        {
+          "amount": "e480,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,500",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "4.40e12",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "93",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-73",
@@ -540,7 +1248,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 73
-      }
+      },
+      "shortTitle": "Restore TS21 + TS33",
+      "summary": "Push AM/IP, buy TD1, then farm the EP theorem.",
+      "requirements": [
+        {
+          "amount": "e520,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,700",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "7.63e12",
+          "resource": "EP",
+          "label": "TD1"
+        },
+        {
+          "amount": "3.52e13",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-74",
@@ -552,7 +1284,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 74
-      }
+      },
+      "shortTitle": "Get TS171",
+      "summary": "Respec into the Active TD path through TS171.",
+      "requirements": [
+        {
+          "amount": "e520,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,700",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "3.52e13",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "100",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "eternity-77",
@@ -564,7 +1320,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 77
-      }
+      },
+      "shortTitle": "Restore TS21 + TS33",
+      "summary": "Push with TS21, then buy the EP theorem for TS33.",
+      "requirements": [
+        {
+          "amount": "e560,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e2,900",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "7.04e13",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-78",
@@ -576,7 +1351,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 78
-      }
+      },
+      "shortTitle": "Buy the ×5 EP upgrade",
+      "summary": "Buy the multiplier and cheaper TDs, then push AM and buy EP theorems.",
+      "requirements": [
+        {
+          "amount": "3.9e14",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        },
+        {
+          "amount": "e580,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "2.81e14",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-79",
@@ -588,7 +1382,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 79
-      }
+      },
+      "shortTitle": "Push with TS162 + TS171",
+      "summary": "Respec into the TD tree, add TS21, and continue the run.",
+      "requirements": [
+        {
+          "amount": "e600,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e3,100",
+          "resource": "IP",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "eternity-80",
@@ -600,7 +1408,21 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 80
-      }
+      },
+      "shortTitle": "Buy the achievement upgrade",
+      "summary": "Restore TS33, buy cheaper TDs, then save for the upgrade.",
+      "requirements": [
+        {
+          "amount": "5.63e14",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "1e16",
+          "resource": "EP",
+          "label": "upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-81",
@@ -612,7 +1434,26 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 81
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Collect more achievements, then push and buy the EP theorem.",
+      "requirements": [
+        {
+          "amount": "e640,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e3,300",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.13e15",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-82",
@@ -624,7 +1465,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 82
-      }
+      },
+      "shortTitle": "Set up Eternity farming",
+      "summary": "Use the farming tree: auto-Eternity 0, Dimboost off, autocrunch 1e112.",
+      "requirements": []
     },
     {
       "id": "eternity-83",
@@ -636,7 +1480,10 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 83
-      }
+      },
+      "shortTitle": "Farm 20,000 Eternities",
+      "summary": "110,000 is recommended to strengthen EU2.",
+      "requirements": []
     },
     {
       "id": "eternity-84",
@@ -648,7 +1495,16 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 84
-      }
+      },
+      "shortTitle": "Buy the ×5 EP upgrade",
+      "summary": "Respec after farming Eternities. Check autobuyers and buy cheaper TDs first.",
+      "requirements": [
+        {
+          "amount": "1.95e16",
+          "resource": "EP",
+          "label": "×5 upgrade"
+        }
+      ]
     },
     {
       "id": "eternity-85",
@@ -660,7 +1516,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 85
-      }
+      },
+      "shortTitle": "Push AM and IP",
+      "summary": "Buy cheaper TDs and bank EP. Add TS41 when affordable, then push for TT.",
+      "requirements": [
+        {
+          "amount": "3e17",
+          "resource": "EP",
+          "label": "reserve"
+        },
+        {
+          "amount": "e700,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e3,600",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.44e17",
+          "resource": "EP",
+          "label": "TT purchase"
+        }
+      ]
     },
     {
       "id": "eternity-86",
@@ -672,7 +1552,31 @@
       "source": {
         "sheet": "Eternity Start",
         "row": 86
-      }
+      },
+      "shortTitle": "Prepare for EC1",
+      "summary": "Have at least 20,000 Eternities; 110,000 is recommended.",
+      "requirements": [
+        {
+          "amount": "e700,000",
+          "resource": "AM",
+          "label": ""
+        },
+        {
+          "amount": "e3,600",
+          "resource": "IP",
+          "label": ""
+        },
+        {
+          "amount": "1.44e17",
+          "resource": "EP",
+          "label": "TT purchase"
+        },
+        {
+          "amount": "130",
+          "resource": "TT",
+          "label": "total"
+        }
+      ]
     },
     {
       "id": "planner-3",
@@ -688,7 +1592,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 3
-      }
+      },
+      "shortTitle": "Complete EC1x1",
+      "requirements": [
+        {
+          "amount": "130",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e1,800",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Start an IC for the achievement, exit, then restart EC1."
     },
     {
       "id": "planner-4",
@@ -704,7 +1622,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 4
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "135",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-5",
@@ -720,11 +1647,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 5
-      }
+      },
+      "shortTitle": "Complete EC2x1",
+      "requirements": [
+        {
+          "amount": "135",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e975",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Wait for Time Shards when IP stalls."
     },
     {
       "id": "planner-6",
-      "title": "Farm to 60000 Eternities and",
+      "title": "Farm 60,000 Eternities",
       "description": "Farm to 60000 Eternities and then Farm to 140TT, also recommended to have 1e18EP",
       "section": "Early challenges",
       "kind": "milestone",
@@ -736,7 +1677,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 6
-      }
+      },
+      "shortTitle": "Farm 60,000 Eternities",
+      "summary": "Then farm TT; the EP amount is recommended.",
+      "requirements": [
+        {
+          "amount": "140",
+          "resource": "TT",
+          "label": ""
+        },
+        {
+          "amount": "1e18",
+          "resource": "EP",
+          "label": "recommended"
+        }
+      ]
     },
     {
       "id": "planner-7",
@@ -752,7 +1707,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 7
-      }
+      },
+      "shortTitle": "Complete EC1x2",
+      "requirements": [
+        {
+          "amount": "140",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "60000+ Eternities needed."
     },
     {
       "id": "planner-8",
@@ -768,11 +1737,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 8
-      }
+      },
+      "shortTitle": "Complete EC3x1",
+      "requirements": [
+        {
+          "amount": "140",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e600",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Unlock via TS73, buy EC3, then respec."
     },
     {
       "id": "planner-9",
-      "title": "Get 1.8e308x10 Yo Dawg Achievement",
+      "title": "Get “Yo Dawg”",
       "description": "Get 1.8e308x10 Yo Dawg Achievement, then Farm to 142 or 145TT",
       "section": "Early challenges",
       "kind": "milestone",
@@ -784,7 +1767,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 9
-      }
+      },
+      "shortTitle": "Get “Yo Dawg”",
+      "summary": "Reach 1.8e308 ×10, then farm TT. The higher target makes EC4x1 easier.",
+      "requirements": [
+        {
+          "amount": "142",
+          "resource": "TT",
+          "label": ""
+        },
+        {
+          "amount": "145",
+          "resource": "TT",
+          "label": "optional"
+        }
+      ]
     },
     {
       "id": "planner-10",
@@ -800,7 +1797,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 10
-      }
+      },
+      "shortTitle": "Complete EC4x1",
+      "requirements": [
+        {
+          "amount": "142",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,750",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Fail once, 145TT allows for TS21 to ease the challenge."
     },
     {
       "id": "planner-11",
@@ -816,7 +1827,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 11
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "147",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-12",
@@ -832,7 +1852,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 12
-      }
+      },
+      "shortTitle": "Complete EC5x1",
+      "requirements": [
+        {
+          "amount": "147",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e750",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-13",
@@ -848,7 +1882,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 13
-      }
+      },
+      "shortTitle": "Complete EC1x3",
+      "requirements": [
+        {
+          "amount": "147",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,200",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "TS62 is now unlocked and speeds up Replicanti."
     },
     {
       "id": "planner-14",
@@ -864,7 +1912,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 14
-      }
+      },
+      "shortTitle": "Add TS62 to EP farming",
+      "summary": "Then farm the next TT target.",
+      "requirements": [
+        {
+          "amount": "155",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-15",
@@ -880,7 +1937,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 15
-      }
+      },
+      "shortTitle": "Complete EC3x2",
+      "requirements": [
+        {
+          "amount": "155",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e675",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Unlock via TS73, buy EC3, then respec."
     },
     {
       "id": "planner-16",
@@ -896,7 +1967,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 16
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "157",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-17",
@@ -912,7 +1992,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 17
-      }
+      },
+      "shortTitle": "Complete EC2x2",
+      "requirements": [
+        {
+          "amount": "157",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,150",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-18",
@@ -928,7 +2022,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 18
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "The higher target adds TS21 for EC6x1.",
+      "requirements": [
+        {
+          "amount": "160",
+          "resource": "TT",
+          "label": ""
+        },
+        {
+          "amount": "163",
+          "resource": "TT",
+          "label": "optional"
+        }
+      ]
     },
     {
       "id": "planner-19",
@@ -944,11 +2052,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 19
-      }
+      },
+      "shortTitle": "Complete EC6x1",
+      "requirements": [
+        {
+          "amount": "160",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e850",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "163TT allows for TS21 to ease the challenge."
     },
     {
       "id": "planner-20",
-      "title": "Farm to 80000 Eternities (Farm to 163TT if you did not earlier)",
+      "title": "Farm 80,000 Eternities",
       "description": "Farm to 80000 Eternities (Farm to 163TT if you did not earlier)",
       "section": "Early challenges",
       "kind": "milestone",
@@ -960,7 +2082,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 20
-      }
+      },
+      "shortTitle": "Farm 80,000 Eternities",
+      "summary": "Reach the TT target if you have not already.",
+      "requirements": [
+        {
+          "amount": "163",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-21",
@@ -976,7 +2107,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 21
-      }
+      },
+      "shortTitle": "Complete EC1x4",
+      "requirements": [
+        {
+          "amount": "163",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,400",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-22",
@@ -992,7 +2137,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 22
-      }
+      },
+      "shortTitle": "Complete EC3x3",
+      "requirements": [
+        {
+          "amount": "163",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e750",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Unlock via TS73, buy EC3, then respec."
     },
     {
       "id": "planner-23",
@@ -1008,7 +2167,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 23
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "166",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-24",
@@ -1024,7 +2192,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 24
-      }
+      },
+      "shortTitle": "Complete EC7x1",
+      "requirements": [
+        {
+          "amount": "166",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e2,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "e500000AM can be farmed with challenge setup."
     },
     {
       "id": "planner-25",
@@ -1040,7 +2222,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 25
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "The higher target adds studies that speed up EC4x2.",
+      "requirements": [
+        {
+          "amount": "170",
+          "resource": "TT",
+          "label": ""
+        },
+        {
+          "amount": "173",
+          "resource": "TT",
+          "label": "optional"
+        }
+      ]
     },
     {
       "id": "planner-26",
@@ -1056,7 +2252,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 26
-      }
+      },
+      "shortTitle": "Complete EC4x2",
+      "requirements": [
+        {
+          "amount": "170",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,300",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "172TT / 173TT allows for TS33 / S62 to speed up the challenge."
     },
     {
       "id": "planner-27",
@@ -1072,7 +2282,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 27
-      }
+      },
+      "shortTitle": "Farm 110,000 Eternities",
+      "summary": "Then farm the next TT target.",
+      "requirements": [
+        {
+          "amount": "176",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-28",
@@ -1088,7 +2307,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 28
-      }
+      },
+      "shortTitle": "Complete EC4x3",
+      "requirements": [
+        {
+          "amount": "175",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,850",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-29",
@@ -1104,7 +2337,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 29
-      }
+      },
+      "shortTitle": "Complete EC6x2",
+      "requirements": [
+        {
+          "amount": "176",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,100",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-30",
@@ -1120,7 +2367,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 30
-      }
+      },
+      "shortTitle": "Complete EC1x5",
+      "requirements": [
+        {
+          "amount": "176",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,600",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-31",
@@ -1136,7 +2397,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 31
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "182",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-32",
@@ -1152,7 +2422,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 32
-      }
+      },
+      "shortTitle": "Complete EC5x2",
+      "requirements": [
+        {
+          "amount": "182",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e1,150",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-33",
@@ -1168,7 +2452,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 33
-      }
+      },
+      "shortTitle": "Complete EC2x3",
+      "requirements": [
+        {
+          "amount": "182",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,325",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Do a normal Active EP run and buy this at the end."
     },
     {
       "id": "planner-34",
@@ -1184,7 +2482,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 34
-      }
+      },
+      "shortTitle": "Complete EC3x4",
+      "requirements": [
+        {
+          "amount": "182",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e825",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Unlock via TS73, buy EC3, then respec."
     },
     {
       "id": "planner-35",
@@ -1200,7 +2512,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 35
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "193",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-36",
@@ -1216,7 +2537,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 36
-      }
+      },
+      "shortTitle": "Complete EC7x2",
+      "requirements": [
+        {
+          "amount": "193",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,530",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Unlock via TS73, buy EC7, then respec."
     },
     {
       "id": "planner-37",
@@ -1232,7 +2567,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 37
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "200",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-38",
@@ -1248,11 +2592,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 38
-      }
+      },
+      "shortTitle": "Complete EC5x3",
+      "requirements": [
+        {
+          "amount": "200",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,550",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-39",
-      "title": "Unlock EC8x1 with the TS133 trick",
+      "title": "Unlock EC8x1",
       "description": "EC8x1 Requirement farm : 7s autocrunch, at e3590ip change autocrunch to 60s and add in TS133 + TS143, BUY EC8x1 then respec\n\nThis is the EC8 trick to not use TS133 which slows replicanti by 10x until you need to do your final push. Use this in all EC8s to get replicanti and RG faster.",
       "section": "EC8 and EC9",
       "kind": "study",
@@ -1264,7 +2622,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 39
-      }
+      },
+      "shortTitle": "Unlock EC8x1",
+      "summary": "Use 7s autocrunch, then 60s at the IP target. Add TS133 + TS143, buy EC8, and respec.",
+      "requirements": [
+        {
+          "amount": "e3,590",
+          "resource": "IP",
+          "label": "switch target"
+        }
+      ]
     },
     {
       "id": "planner-41",
@@ -1280,7 +2647,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 41
-      }
+      },
+      "shortTitle": "Complete EC8x1",
+      "requirements": [
+        {
+          "amount": "200",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e1,300",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "0RG; 9% RG Chance; Buy only ID1."
     },
     {
       "id": "planner-42",
@@ -1296,7 +2677,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 42
-      }
+      },
+      "shortTitle": "Complete EC3x5",
+      "requirements": [
+        {
+          "amount": "200",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e900",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-43",
@@ -1312,7 +2707,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 43
-      }
+      },
+      "shortTitle": "Complete EC6x3",
+      "requirements": [
+        {
+          "amount": "200",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,350",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-44",
@@ -1328,7 +2737,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 44
-      }
+      },
+      "shortTitle": "Complete EC2x4",
+      "requirements": [
+        {
+          "amount": "200",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,500",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-45",
@@ -1344,7 +2767,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 45
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "215",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-46",
@@ -1360,7 +2792,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 46
-      }
+      },
+      "shortTitle": "Complete EC5x4",
+      "requirements": [
+        {
+          "amount": "215",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,950",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "214TT can work for EC5x4, 215TT is for EC7x3."
     },
     {
       "id": "planner-47",
@@ -1376,7 +2822,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 47
-      }
+      },
+      "shortTitle": "Complete EC7x3",
+      "requirements": [
+        {
+          "amount": "215",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,060",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Unlock via TS73, buy EC7, then respec."
     },
     {
       "id": "planner-48",
@@ -1392,7 +2852,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 48
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "240",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-49",
@@ -1408,7 +2877,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 49
-      }
+      },
+      "shortTitle": "Complete EC2x5",
+      "requirements": [
+        {
+          "amount": "240",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,675",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-50",
@@ -1424,7 +2907,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 50
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "245+",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-51",
@@ -1440,7 +2932,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 51
-      }
+      },
+      "shortTitle": "Complete EC5x5",
+      "requirements": [
+        {
+          "amount": "245",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,350",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "252TT can get TS31 + TS41 for full tree."
     },
     {
       "id": "planner-52",
@@ -1456,7 +2962,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 52
-      }
+      },
+      "shortTitle": "Complete EC4x4",
+      "requirements": [
+        {
+          "amount": "245",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e4,400",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-53",
@@ -1472,7 +2992,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 53
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "264",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-54",
@@ -1488,7 +3017,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 54
-      }
+      },
+      "shortTitle": "Complete EC6x4",
+      "requirements": [
+        {
+          "amount": "264",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,600",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-55",
@@ -1504,7 +3047,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 55
-      }
+      },
+      "shortTitle": "Complete EC7x4",
+      "requirements": [
+        {
+          "amount": "264",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,590",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-56",
@@ -1520,7 +3077,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 56
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "310",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-57",
@@ -1536,11 +3102,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 57
-      }
+      },
+      "shortTitle": "Complete EC8x2",
+      "requirements": [
+        {
+          "amount": "310",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,200",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "0RG; 9% RG Chance; Buy only ID1."
     },
     {
       "id": "planner-58",
-      "title": "Farm to 1e40EP Eternity Upgrade",
+      "title": "Buy the Eternity Upgrade",
       "description": "Farm to 1e40EP Eternity Upgrade, roughly 320TT",
       "section": "EC8 and EC9",
       "kind": "milestone",
@@ -1552,7 +3132,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 58
-      }
+      },
+      "shortTitle": "Buy the Eternity Upgrade",
+      "summary": "Farm EP for the upgrade; the TT amount is approximate.",
+      "requirements": [
+        {
+          "amount": "1e40",
+          "resource": "EP",
+          "label": "upgrade"
+        },
+        {
+          "amount": "320",
+          "resource": "TT",
+          "label": "approximate"
+        }
+      ]
     },
     {
       "id": "planner-59",
@@ -1568,11 +3162,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 59
-      }
+      },
+      "shortTitle": "Complete EC6x5",
+      "requirements": [
+        {
+          "amount": "320+",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,850",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "1e40EP Eternity Upgrade required."
     },
     {
       "id": "planner-60",
-      "title": "Add TS181 into your EP farming (remember to disable autocrunch)",
+      "title": "Add TS181 to EP farming",
       "description": "Add TS181 into your EP farming (remember to disable autocrunch), Farm to 370TT",
       "section": "EC8 and EC9",
       "kind": "milestone",
@@ -1584,7 +3192,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 60
-      }
+      },
+      "shortTitle": "Add TS181 to EP farming",
+      "summary": "Disable autocrunch, then farm TT.",
+      "requirements": [
+        {
+          "amount": "370",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-61",
@@ -1600,7 +3217,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 61
-      }
+      },
+      "shortTitle": "Complete EC4x5",
+      "requirements": [
+        {
+          "amount": "370",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e4,950",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Can be done with TS71 path 7TT earlier."
     },
     {
       "id": "planner-62",
@@ -1616,7 +3247,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 62
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "Use 4 RG for EC8x3. Alternative TT/RG setups are in Guide details.",
+      "requirements": [
+        {
+          "amount": "450",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-63",
@@ -1632,7 +3272,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 63
-      }
+      },
+      "shortTitle": "Complete EC8x3",
+      "requirements": [
+        {
+          "amount": "450",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,100",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "4RG; 9% RG Chance; Buy only ID1; Delay TS133 until the final push."
     },
     {
       "id": "planner-64",
@@ -1648,7 +3302,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 64
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "522",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-65",
@@ -1664,7 +3327,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 65
-      }
+      },
+      "shortTitle": "Complete EC9x1",
+      "requirements": [
+        {
+          "amount": "522",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e1,750",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Wait for Time Shards when IP stalls."
     },
     {
       "id": "planner-66",
@@ -1680,7 +3357,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 66
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "575",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-67",
@@ -1696,7 +3382,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 67
-      }
+      },
+      "shortTitle": "Complete EC9x2",
+      "requirements": [
+        {
+          "amount": "575",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Wait for Time Shards when IP stalls."
     },
     {
       "id": "planner-68",
@@ -1712,7 +3412,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 68
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "Use 4 RG for EC8x4. Alternative TT/RG setups are in Guide details.",
+      "requirements": [
+        {
+          "amount": "600",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-69",
@@ -1728,7 +3437,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 69
-      }
+      },
+      "shortTitle": "Complete EC8x4",
+      "requirements": [
+        {
+          "amount": "600",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e4,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "4RG; 9% RG Chance; Buy only ID1; Delay TS133 until the final push."
     },
     {
       "id": "planner-70",
@@ -1744,7 +3467,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 70
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "660",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-71",
@@ -1760,7 +3492,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 71
-      }
+      },
+      "shortTitle": "Complete EC9x3",
+      "requirements": [
+        {
+          "amount": "660",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,250",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Wait for Time Shards when IP stalls."
     },
     {
       "id": "planner-72",
@@ -1776,7 +3522,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 72
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "760",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-73",
@@ -1792,7 +3547,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 73
-      }
+      },
+      "shortTitle": "Complete EC9x4",
+      "requirements": [
+        {
+          "amount": "760",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,500",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Crunch a bit at the end for TS141."
     },
     {
       "id": "planner-74",
@@ -1808,7 +3577,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 74
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "Use 0 RG for EC8x5. Alternative TT/RG setups are in Guide details.",
+      "requirements": [
+        {
+          "amount": "825",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-75",
@@ -1824,7 +3602,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 75
-      }
+      },
+      "shortTitle": "Complete EC8x5",
+      "requirements": [
+        {
+          "amount": "825",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e4,900",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "0RG; 9% RG Chance; Buy only ID1."
     },
     {
       "id": "planner-76",
@@ -1840,7 +3632,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 76
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "830+",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-77",
@@ -1856,7 +3657,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 77
-      }
+      },
+      "shortTitle": "Complete EC9x5",
+      "requirements": [
+        {
+          "amount": "830",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e2,750",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Crunch a bit at the end for TS141."
     },
     {
       "id": "planner-78",
@@ -1872,7 +3687,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 78
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "858+",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-79",
@@ -1888,7 +3712,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 79
-      }
+      },
+      "shortTitle": "Complete EC10x1",
+      "requirements": [
+        {
+          "amount": "858",
+          "resource": "TT",
+          "label": "required"
+        },
+        {
+          "amount": "e3,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Farm Infinities inside EC10."
     },
     {
       "id": "planner-80",
@@ -1904,7 +3742,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 80
-      }
+      },
+      "shortTitle": "Complete EC7x5",
+      "requirements": [
+        {
+          "amount": "858",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e4,120",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-81",
@@ -1920,7 +3772,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 81
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "summary": "Use the EP tree with TS191 → TS212 → TS211. Later setups assume 110k Eternities.",
+      "requirements": [
+        {
+          "amount": "1820+",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-82",
@@ -1936,7 +3797,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 82
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "summary": "Add TS191, TS193, TS212, TS214; then TS211 → TS213.",
+      "requirements": [
+        {
+          "amount": "1292",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-83",
@@ -1952,7 +3822,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 83
-      }
+      },
+      "shortTitle": "Complete EC10x2",
+      "requirements": [
+        {
+          "amount": "1820",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,300",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Have 10M+ Infinities Banked."
     },
     {
       "id": "planner-84",
@@ -1968,7 +3852,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 84
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "2050",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-85",
@@ -1984,7 +3877,10 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 85
-      }
+      },
+      "shortTitle": "Get “Popular Music”",
+      "summary": "Farm 180+ RG on Active. Disable Galaxy autobuyer, crunch, and buy all RG.",
+      "requirements": []
     },
     {
       "id": "planner-86",
@@ -2000,7 +3896,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 86
-      }
+      },
+      "shortTitle": "Complete EC10x3",
+      "requirements": [
+        {
+          "amount": "2050",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,600",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Have 20M+ Infinities Banked."
     },
     {
       "id": "planner-87",
@@ -2016,7 +3926,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 87
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "requirements": [
+        {
+          "amount": "2142",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-88",
@@ -2032,7 +3951,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 88
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "requirements": [
+        {
+          "amount": "2272",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-89",
@@ -2048,7 +3976,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 89
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "2740+",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-90",
@@ -2064,7 +4001,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 90
-      }
+      },
+      "shortTitle": "Complete EC10x4",
+      "requirements": [
+        {
+          "amount": "2740+",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e3,900",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Have 35M+ Infinities Banked."
     },
     {
       "id": "planner-91",
@@ -2080,7 +4031,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 91
-      }
+      },
+      "shortTitle": "Complete EC11x1",
+      "requirements": [
+        {
+          "amount": "2886+",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e450",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-92",
@@ -2096,7 +4061,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 92
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "requirements": [
+        {
+          "amount": "3542",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-93",
@@ -2112,7 +4086,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 93
-      }
+      },
+      "shortTitle": "Complete EC10x5",
+      "requirements": [
+        {
+          "amount": "3615+",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e4,200",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": "Have 45M+ Infinities Banked."
     },
     {
       "id": "planner-94",
@@ -2128,7 +4116,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 94
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "requirements": [
+        {
+          "amount": "3712",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-95",
@@ -2144,7 +4141,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 95
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "requirements": [
+        {
+          "amount": "3925",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": "Use TS201 to add the TS72 path."
     },
     {
       "id": "planner-96",
@@ -2160,7 +4166,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 96
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "4870+",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-97",
@@ -2176,7 +4191,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 97
-      }
+      },
+      "shortTitle": "Complete EC11x2",
+      "requirements": [
+        {
+          "amount": "4870+",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e650",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-98",
@@ -2192,7 +4221,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 98
-      }
+      },
+      "shortTitle": "Update the EP farming tree",
+      "requirements": [
+        {
+          "amount": "4945",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": "Use TS201 to add the TS72 path."
     },
     {
       "id": "planner-99",
@@ -2208,7 +4246,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 99
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "5907+",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-100",
@@ -2224,7 +4271,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 100
-      }
+      },
+      "shortTitle": "Complete EC11x3",
+      "requirements": [
+        {
+          "amount": "5950",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e850",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-101",
@@ -2240,7 +4301,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 101
-      }
+      },
+      "shortTitle": "Complete EC11x4",
+      "requirements": [
+        {
+          "amount": "5950",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,050",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-102",
@@ -2256,11 +4331,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 102
-      }
+      },
+      "shortTitle": "Complete EC11x5",
+      "requirements": [
+        {
+          "amount": "5950",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e1,250",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-103",
-      "title": "Farm to 9800TT and get at least 100M Banked Infinities",
+      "title": "Prepare for EC12",
       "description": "Farm to 9800TT and get at least 100M Banked Infinities",
       "section": "Final challenges",
       "kind": "milestone",
@@ -2272,7 +4361,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 103
-      }
+      },
+      "shortTitle": "Prepare for EC12",
+      "summary": "Bank at least 100M Infinities.",
+      "requirements": [
+        {
+          "amount": "9800",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-104",
@@ -2288,7 +4386,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 104
-      }
+      },
+      "shortTitle": "Complete EC12x1",
+      "requirements": [
+        {
+          "amount": "9800",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e110,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-105",
@@ -2304,7 +4416,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 105
-      }
+      },
+      "shortTitle": "Complete EC12x2",
+      "requirements": [
+        {
+          "amount": "9800",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e122,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-106",
@@ -2320,7 +4446,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 106
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "10750",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-107",
@@ -2336,11 +4471,25 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 107
-      }
+      },
+      "shortTitle": "Complete EC12x3",
+      "requirements": [
+        {
+          "amount": "10750",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e134,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-108",
-      "title": "Farm to 11200TT",
+      "title": "Prepare for EC12x4",
       "description": "Farm to 11200TT, Get \"What do I have to do to get rid of you\" and 150M Banked Infinities",
       "section": "Final challenges",
       "kind": "milestone",
@@ -2352,7 +4501,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 108
-      }
+      },
+      "shortTitle": "Prepare for EC12x4",
+      "summary": "Bank 150M Infinities and get “What do I have to do to get rid of you”.",
+      "requirements": [
+        {
+          "amount": "11200",
+          "resource": "TT",
+          "label": ""
+        }
+      ]
     },
     {
       "id": "planner-109",
@@ -2368,7 +4526,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 109
-      }
+      },
+      "shortTitle": "Complete EC12x4",
+      "requirements": [
+        {
+          "amount": "11200",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e146,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-110",
@@ -2384,7 +4556,16 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 110
-      }
+      },
+      "shortTitle": "Farm Time Theorems",
+      "requirements": [
+        {
+          "amount": "12350",
+          "resource": "TT",
+          "label": ""
+        }
+      ],
+      "summary": ""
     },
     {
       "id": "planner-111",
@@ -2400,7 +4581,21 @@
       "source": {
         "sheet": "EC Planner v2.6",
         "row": 111
-      }
+      },
+      "shortTitle": "Complete EC12x5",
+      "requirements": [
+        {
+          "amount": "12350",
+          "resource": "TT",
+          "label": "recommended"
+        },
+        {
+          "amount": "e158,000",
+          "resource": "IP",
+          "label": "goal"
+        }
+      ],
+      "summary": ""
     }
   ]
 }

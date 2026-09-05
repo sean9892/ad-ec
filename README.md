@@ -10,6 +10,7 @@ Antimatter Dimensions Eternity Challenge Guide: a static, single-page companion 
 - Progress and the current position are saved in this browser with `localStorage`. No account or backend is needed. Clearing browser data clears progress; storage restrictions fall back to the current session.
 - Use the arrow buttons, or focus the card region and use Arrow Up/Down, Page Up/Down, Home, or End. Reduced-motion preferences are respected.
 - Open **Copyright Info** in the top-right for attribution and the original spreadsheet.
+- Each card has a short instruction and resource badges. **Guide details** keeps the full source notes available. AM (`#EA4335`), IP (`#FF6D01`), EP (`#D105C3`), and TT (`#FFFFFF`) use the workbook's original text colors, read from the rich text in **Eternity Start!B24**. Badges use black backgrounds so the original EP color remains legible.
 
 ## Development and static hosting
 
@@ -40,7 +41,7 @@ The registry initialization endpoint was unavailable in the build environment. T
 
 Based on the [Antimatter Dimensions – Eternity and Eternity Challenges spreadsheet](https://docs.google.com/spreadsheets/d/1NrYADsW4s7wRYTE91Z0EFHbXcHaswuuMzG9a2WyGG0A/edit?gid=1524747248#gid=1524747248), supplied as `Antimatter Dimensions - Eternity and Eternity Challenges (1).xlsx`. Guide credit: Ninjatsu and the Antimatter Dimensions community. This project is an unofficial companion; the original guide and game remain the work of their respective creators.
 
-`src/data/objectives.json` contains 56 early-Eternity objectives and 108 planner objectives, including all 60 challenge completions and the farming steps between them. Each record retains its source sheet and row. Early-Eternity prose is given a concise objective title; explanatory rows and the FAQ are not standalone objectives. The EC8 trick explanation is attached to its setup objective. Challenge order is checked against the workbook's **EC Order** sheet, and IP goals come from **Picturemap v2.6**. Original recommendations and optional thresholds are retained, including differences between an intermediate farming target and a later recommendation. The workbook is not modified or needed at runtime.
+`src/data/objectives.json` contains 56 early-Eternity objectives and 108 planner objectives, including all 60 challenge completions and the farming steps between them. Each record retains its source sheet and row. `scripts/objective-copy.json` supplies concise card copy and labeled primary requirements; the extractor generates the simpler farming and challenge summaries. Original descriptions remain under **Guide details**, including optional thresholds and differences between an intermediate farming target and a later recommendation. Numeric AM/IP/EP/TT quantities also render as badges in expanded notes and the sidebar; multipliers and farming rates remain text. Explanatory rows and the FAQ are not standalone objectives. The EC8 trick explanation is attached to its setup objective. Challenge order is checked against **EC Order**, and IP goals come from **Picturemap v2.6**. The workbook is not modified or needed at runtime.
 
 To regenerate the checked-in data from the supplied workbook using Python's standard library:
 
