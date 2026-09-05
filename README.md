@@ -25,6 +25,16 @@ npm run build
 
 Deploy the generated `dist/` directory to any static host. Vite uses a relative asset base (`./`), so the same build works at the domain root or under a repository path such as `/ad-ec/`. There are no server routes, secrets, or runtime services. `npm run preview` serves the production build locally.
 
+## GitHub Pages deployment
+
+One-time setup: open **Settings → Pages** in this repository and set **Build and deployment → Source** to **GitHub Actions**. See [GitHub's Pages workflow guide](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+After merging this workflow, every push to `main` automatically installs dependencies, runs the tests, builds `dist/`, and deploys that build to GitHub Pages. Pull requests run validation and upload a review artifact without deploying. You can also run **Validate and deploy static site** manually from the Actions tab with `main` selected.
+
+The default site address is [sean9892.github.io/ad-ec](https://sean9892.github.io/ad-ec/). The deployment job also reports the actual URL through the `github-pages` environment. No personal access token or custom secret is needed. If an existing `github-pages` environment has branch restrictions, allow deployments from `main`.
+
+The existing relative Vite asset base supports the repository subpath, including fonts and lazy-loaded Mermaid modules. Only `dist/` is published; no source checkout or Sites configuration is uploaded. Progress saved on the previous host stays in that browser origin and does not transfer to the GitHub Pages address.
+
 ## Requested shadcn preset
 
 The app uses preset **`b37arxUUC`**: Base UI, Nova style, mauve base, fuchsia theme, indigo chart colors, Inter font, Lucide icons, default radius, subtle menu accent, and default menu color. The decoded settings are recorded in `shadcn-preset.json` and `components.json` records the component configuration.
