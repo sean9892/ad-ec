@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { connections, parseStudies, studyDiagram, studyRoutes } from '../src/lib/studies.ts'
+import { allStudies, connections, parseStudies, studyDiagram, studyRoutes } from '../src/lib/studies.ts'
 const guide=JSON.parse(readFileSync(new URL('../src/data/objectives.json',import.meta.url),'utf8'))
 const early=JSON.parse(readFileSync(new URL('../src/data/early-studies.json',import.meta.url),'utf8'))
 test('early trees carry forward purchases and remove respecced studies',()=>{
@@ -29,11 +29,16 @@ test('all guide setups use known study nodes and all challenge setups are presen
   assert(studies.filter((id:number)=>id>=221&&id<=228).length<=5)
  }
 })
-test('diagram includes new nodes, real branches and the EC10 gate',()=>{
- const source=studyDiagram([11,21,22,31,32,181,191],[31])
- assert(source.includes('s31["TS31 · NEW"]'))
+test('full tree retains unbought branches and uses plain study labels',()=>{
+ const source=studyDiagram([11,21,31,181,191])
+ for (const id of allStudies) assert(source.includes(`s${id}["TS${id}"]`))
+ assert(!source.includes('NEW'))
+ assert(source.includes('style s22 fill:#45454f'))
+ assert(source.includes('style s31 fill:#46bdc6'))
  assert(source.includes('s21 --> s31'))
  assert(source.includes('s181 --> ec10'))
  assert(source.includes('ec10 --> s191'))
  assert(!source.includes('s181 --> s191'))
+ const empty=studyDiagram([])
+ for (const id of allStudies) assert(empty.includes(`style s${id} fill:#45454f`))
 })

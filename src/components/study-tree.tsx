@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import { ChevronDown, Workflow } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { routeColors, studyDiagram, studyRoutes } from '@/lib/studies'
@@ -8,32 +8,65 @@ const loadMermaid = () => import('mermaid').then(({ default: mermaid }) => {
   return mermaid
 })
 let renderer: ReturnType<typeof loadMermaid> | undefined
-function Diagram({ studies, added }: { studies: number[]; added: number[] }) {
+function Diagram({ studies }: { studies: number[] }) {
   const id=useId().replace(/[^a-zA-Z0-9]/g,'')
+  const viewport = useRef<HTMLDivElement>(null)
+  const drag = useRef<{ id: number; x: number; y: number; left: number; top: number } | null>(null)
+  const [dragging, setDragging] = useState(false)
   const [svg,setSvg]=useState('')
   const [failed,setFailed]=useState(false)
-  const source=studyDiagram(studies,added)
+  const source=studyDiagram(studies)
   useEffect(() => {
     let cancelled=false
     renderer ??= loadMermaid()
     renderer.then(m=>m.render(`tree${id}`,source)).then(result=>{if(!cancelled) setSvg(result.svg)}).catch(()=>{if(!cancelled) setFailed(true)})
     return ()=>{cancelled=true}
   },[id,source])
-  return <div className="study-diagram" tabIndex={0} role="region" aria-label="Time Study tree, scroll to explore">
+  useEffect(() => {
+    const element = viewport.current
+    if (element && svg) element.scrollLeft = Math.max(0, (element.scrollWidth - element.clientWidth) / 2)
+  }, [svg])
+  const endDrag = () => { drag.current = null; setDragging(false) }
+  return <div ref={viewport} className={`study-diagram ${dragging ? 'is-dragging' : ''}`} tabIndex={0} role="region" aria-label="Full Time Study tree. Drag or scroll to explore. Gray studies are not bought."
+    onPointerDown={event => {
+      if (event.button !== 0 || !event.isPrimary) return
+      const element = event.currentTarget
+      const bounds = element.getBoundingClientRect()
+      if (event.clientX - bounds.left >= element.clientWidth || event.clientY - bounds.top >= element.clientHeight) return
+      element.focus({ preventScroll: true })
+      drag.current = { id: event.pointerId, x: event.clientX, y: event.clientY, left: element.scrollLeft, top: element.scrollTop }
+      element.setPointerCapture(event.pointerId)
+      setDragging(true)
+      event.preventDefault()
+    }}
+    onPointerMove={event => {
+      const start = drag.current
+      if (!start || start.id !== event.pointerId) return
+      event.currentTarget.scrollLeft = start.left - (event.clientX - start.x)
+      event.currentTarget.scrollTop = start.top - (event.clientY - start.y)
+      event.preventDefault()
+    }}
+    onPointerUp={event => {
+      if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId)
+      endDrag()
+    }}
+    onPointerCancel={endDrag}
+    onLostPointerCapture={endDrag}>
+
     {svg ? <div dangerouslySetInnerHTML={{__html:svg}} /> : <p role="status">{failed ? 'Tree unavailable. Study IDs are listed below.' : 'Drawing study tree…'}</p>}
   </div>
 }
 export function RouteBadges({ studies }: { studies: number[] }) {
   return <div className="route-information">{Object.entries(studyRoutes(studies)).map(([label,routes])=><div className="route-field" key={label}><span>{label}</span>{routes.map(route=><Badge className="route-badge" key={route} style={{backgroundColor:routeColors[route].background,color:routeColors[route].color}}>{route}</Badge>)}</div>)}</div>
 }
-export function StudyTree({ studies, added=[], early=false, active }: { studies:number[]; added?:number[]; early?:boolean; active:boolean }) {
+export function StudyTree({ studies, early=false, active }: { studies:number[]; early?:boolean; active:boolean }) {
   const [open,setOpen]=useState(early)
   return <details className="study-setup" open={open} onToggle={event=>setOpen(event.currentTarget.open)}>
     <summary><Workflow size={16}/>Time Study setup<ChevronDown size={16}/></summary>
-    {open && <div className="study-tree-body">{studies.length ? <>
-      {added.length>0 && <p className="study-legend">NEW · {added.map(id=>`TS${id}`).join(', ')}</p>}
-      {active ? <Diagram studies={studies} added={added}/> : <div className="study-diagram"/>}
-      <details className="study-ids"><summary>Study IDs</summary><code>{studies.join(',')}</code></details>
-    </> : <p className="study-legend">No Time Studies yet.</p>}</div>}
+    {open && <div className="study-tree-body">
+      <p className="study-legend">Drag to explore · Gray = unbought</p>
+      {active ? <Diagram studies={studies}/> : <div className="study-diagram"/>}
+      <details className="study-ids"><summary>Bought study IDs</summary><code>{studies.join(',') || 'None'}</code></details>
+    </div>}
   </details>
 }

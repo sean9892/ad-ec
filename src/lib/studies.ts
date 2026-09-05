@@ -30,22 +30,32 @@ export const connections: [number, number][] = [
  [171,181],[192,201],[191,211],[191,212],[193,213],[193,214],[211,221],[211,222],[212,223],[212,224],
  [213,225],[213,226],[214,227],[214,228],[221,231],[222,231],[223,232],[224,232],[225,233],[226,233],[227,234],[228,234],
 ]
-export function studyDiagram(studies: number[], added: number[] = []): string {
-  const selected=new Set(studies)
-  const lines=['flowchart TD', 'accTitle: Time Study setup', 'accDescr: Selected Time Studies. NEW marks studies added at this objective.']
-  for (const id of studies) lines.push(`s${id}["TS${id}${added.includes(id) ? ' · NEW' : ''}"]`)
-  for (const [from,to] of connections) if (selected.has(from) && selected.has(to)) lines.push(`s${from} --> s${to}`)
-  // EC10 completion is the actual gate between TS181 and row 19, not a direct TS edge.
-  if (studies.some(id=>id>=191)) {
-    lines.push('ec10["EC10 completed"]')
-    if(selected.has(181)) lines.push('s181 --> ec10')
-    for(const id of [191,192,193]) if(selected.has(id)) lines.push(`ec10 --> s${id}`)
+export const allStudies = [...new Set(connections.flat())].sort((a, b) => a - b)
+
+export function studyDiagram(studies: number[]): string {
+  const selected = new Set(studies)
+  const lines = ['flowchart TD', 'accTitle: Full Time Study tree', 'accDescr: Colored studies belong to this objective setup. Gray studies are not bought.']
+  for (const id of allStudies) lines.push(`s${id}["TS${id}"]`)
+  for (const [from, to] of connections) {
+    // Stagger the eight row-22 choices over two ranks, keeping the viewer compact
+    // without adding imaginary prerequisite edges between alternative studies.
+    const stagger = (to >= 221 && to <= 228 && to % 2 === 0) || (from >= 221 && from <= 228 && from % 2 === 1)
+    lines.push(`s${from} ${stagger ? '--->' : '-->'} s${to}`)
   }
-  for (const id of studies) {
-    const route=studyRoute(id)
-    const colors=route === 'None' ? {background:'#46bdc6',color:'#000000'} : routeColors[route]
-    const late=id>=221 ? {background:id%2 ? '#111111':'#eeeeee', color:id%2 ? '#ffffff':'#000000'} : colors
-    lines.push(`style s${id} fill:${late.background},color:${late.color},stroke:${added.includes(id)?'#ffffff':'#666666'},stroke-width:${added.includes(id)?'4px':'1px'}`)
+  // EC10 completion is the actual gate between TS181 and row 19.
+  const pastEC10 = studies.some(id => id >= 191)
+  lines.push('ec10["EC10 gate"]', 's181 --> ec10')
+  for (const id of [191, 192, 193]) lines.push(`ec10 --> s${id}`)
+  for (const id of allStudies) {
+    const route = studyRoute(id)
+    const colors = route === 'None' ? { background: '#46bdc6', color: '#000000' } : routeColors[route]
+    const bought = id >= 221 ? { background: id % 2 ? '#111111' : '#eeeeee', color: id % 2 ? '#ffffff' : '#000000' } : colors
+    const appearance = selected.has(id) ? bought : { background: '#45454f', color: '#d4d4d8' }
+    lines.push(`style s${id} fill:${appearance.background},color:${appearance.color},stroke:${selected.has(id) ? '#eeeeee' : '#64646e'},stroke-width:${selected.has(id) ? '2px' : '1px'}`)
   }
+  lines.push(`style ec10 fill:${pastEC10 ? '#46bdc6' : '#45454f'},color:${pastEC10 ? '#000000' : '#d4d4d8'},stroke:#64646e`)
+  const edgeStates = connections.map(([from, to]) => selected.has(from) && selected.has(to))
+  edgeStates.push(pastEC10 && selected.has(181), ...[191, 192, 193].map(id => pastEC10 && selected.has(id)))
+  edgeStates.forEach((bought, index) => lines.push(`linkStyle ${index} stroke:${bought ? '#b6aabd' : '#55555f'},stroke-width:${bought ? '2px' : '1px'}`))
   return lines.join('\n')
 }
