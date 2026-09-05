@@ -1,5 +1,5 @@
 export type Resource = 'AM' | 'IP' | 'EP' | 'TT'
-export interface Requirement { amount: string; resource: Resource; label?: string }
+export interface Requirement { amount: string; resource: Resource }
 export type ResourceSegment = { type: 'text'; text: string } | { type: 'resource'; requirement: Requirement }
 
 // Keep scientific notation intact; skip ×5 EP / x5EP multipliers and EP/min rates.

@@ -42,10 +42,9 @@ def read_resource_colors(path):
         return colors
 
 def requirement(text):
-    quantity, _, label = text.partition('|')
-    match = re.fullmatch(r'\s*(.+?)\s*(AM|IP|EP|TT)(\+)?\s*', quantity, re.I)
+    match = re.fullmatch(r'\s*(.+?)\s*(AM|IP|EP|TT)(\+)?\s*', text, re.I)
     assert match, f'Invalid resource requirement: {text}'
-    return dict(amount=match[1].strip() + (match[3] or ''), resource=match[2].upper(), label=label.strip())
+    return dict(amount=match[1].strip() + (match[3] or ''), resource=match[2].upper())
 
 def compact_objective(objective):
     """Keep the original note for reference; author the short default card separately."""
@@ -59,11 +58,10 @@ def compact_objective(objective):
     description = objective['description']
     if objective.get('challenge'):
         objective['shortTitle'] = objective['title']
-        qualifier = 'required' if re.search(r'Require\s*:', description) else 'recommended'
         plus = '+' if re.search(r'\d+TT\+', description) else ''
-        targets = [f"{objective['timeTheorems']}{plus} TT | {qualifier}"] if objective['timeTheorems'] else []
+        targets = [f"{objective['timeTheorems']}{plus} TT"] if objective['timeTheorems'] else []
         if objective['ipGoal']:
-            targets.append(f"e{int(objective['ipGoal']):,} IP | goal")
+            targets.append(f"e{int(objective['ipGoal']):,} IP")
         objective['requirements'] = [requirement(target) for target in targets]
         after_time = re.split(r'(?:Average Time|Time)\s*:', description, maxsplit=1)[-1]
         summary = after_time.partition(',')[2].strip().rstrip('.')
@@ -192,8 +190,8 @@ def extract(path):
     for objective in objectives:
         compact_objective(objective)
     return dict(sourceUrl=SOURCE_URL, sourceFile=Path(path).name,
-        resourceColors=read_resource_colors(path),
-        resourceColorSource=dict(sheet='Eternity Start', cell='B24'), objectives=objectives)
+        resourceColors={**read_resource_colors(path), 'TT': '#46BDC6'},
+        resourceColorSource=dict(sheet='Eternity Start', cell='B24', overrides={'TT': '#46BDC6'}), objectives=objectives)
 
 if __name__ == '__main__':
     data = extract(sys.argv[1])
