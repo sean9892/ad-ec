@@ -2,14 +2,17 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { ArrowDown, ArrowUp, ArrowUpRight, BookOpen, Check, CheckCheck, ChevronDown, CircleHelp, Clock3, Flag, Infinity as InfinityIcon, List, LockKeyhole, Mouse, RotateCcw, Sparkles, Workflow } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { ResourceBadge, ResourceText } from '@/components/resource-badge'
+import type { Requirement } from '@/lib/resources'
 import { Progress } from '@/components/ui/progress'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import guide from '@/data/objectives.json'
 import { readProgress, STORAGE_KEY, toggleCompleted } from '@/lib/progress'
 
-type Objective = { id: string; title: string; description: string; section: string; kind: string; studies?: string | null; challenge?: string | null; timeTheorems?: number | null; duration?: string | null; ipGoal?: string | null; source: { sheet: string; row: number } }
-const objectives: Objective[] = guide.objectives
+type Objective = { id: string; title: string; shortTitle: string; summary: string; requirements: Requirement[]; description: string; section: string; kind: string; studies?: string | null; challenge?: string | null; timeTheorems?: number | null; duration?: string | null; ipGoal?: string | null; source: { sheet: string; row: number } }
+const objectives = guide.objectives as Objective[]
 const ids = objectives.map(objective => objective.id)
 const groups = [...new Set(objectives.map(objective => objective.section))]
 const pad = (value: number) => String(value).padStart(3, '0')
@@ -37,7 +40,7 @@ function ObjectiveList({ active, completed, onSelect }: { active: number; comple
       <ol>{objectives.map((objective, index) => objective.section !== group ? null : <li key={objective.id}>
         <button className={`objective-link ${completed.has(objective.id) ? 'is-complete' : ''}`} aria-current={index === active ? 'step' : undefined} onClick={() => onSelect(index)}>
           <span className="step-indicator" aria-hidden="true">{completed.has(objective.id) ? <Check size={12} strokeWidth={3} /> : index === active ? <span /> : null}</span>
-          <span className="objective-link-title">{objective.title}</span>
+          <span className="objective-link-title"><ResourceText text={objective.title} /></span>
           <span className="sr-only">{completed.has(objective.id) ? ', achieved' : ', not achieved'}</span>
         </button>
       </li>)}</ol>
@@ -66,17 +69,15 @@ function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComple
   return <div className="objective-content">
     <div className="section-caption"><span className="caption-line" />{objective.section}<span className="caption-line" /></div>
     <Card className={`objective-card ${achieved ? 'achieved-card' : ''}`} aria-labelledby={`title-${objective.id}`}>
-      <div className="card-topline"><span className="kind-badge"><Icon size={14} />{objective.kind === 'challenge' ? 'Eternity Challenge' : objective.kind === 'study' ? 'Time Study' : 'Milestone'}</span><span className="card-number">{pad(index + 1)}<span> / {pad(objectives.length)}</span></span></div>
+      <div className="card-topline"><Badge variant="outline" className="kind-badge"><Icon size={14} />{objective.kind === 'challenge' ? 'Eternity Challenge' : objective.kind === 'study' ? 'Time Study' : 'Milestone'}</Badge><span className="card-number">{pad(index + 1)}<span> / {pad(objectives.length)}</span></span></div>
       <div className="card-body">
         <div className="objective-eyebrow">{achieved ? <><Check size={14} /> OBJECTIVE ACHIEVED</> : 'CURRENT OBJECTIVE'}</div>
-        <h1 id={`title-${objective.id}`}>{objective.title}</h1>
-        {objective.challenge && <div className="challenge-stats">
-          {objective.timeTheorems && <span><Workflow size={14} />{objective.timeTheorems.toLocaleString()} TT</span>}
-          {objective.ipGoal && <span><Flag size={14} />e{Number(objective.ipGoal).toLocaleString()} IP goal</span>}
-          {objective.duration && <span><Clock3 size={14} />{objective.duration.replaceAll('~', '–')}</span>}
-        </div>}
-        <div className="objective-description">{objective.description.split('\n\n').map((text, paragraph) => <p key={paragraph}>{text}</p>)}</div>
+        <h1 id={`title-${objective.id}`}>{objective.shortTitle}</h1>
+        {objective.requirements.length > 0 && <div className="requirement-badges" aria-label="Resource requirements">{objective.requirements.map((requirement, index) => <ResourceBadge key={index} requirement={requirement} />)}</div>}
+        {objective.duration && <div className="challenge-duration"><Clock3 size={14} />{objective.duration.replaceAll('~', '–')}</div>}
+        {objective.summary && <p className="objective-summary"><ResourceText text={objective.summary} /></p>}
         {objective.studies && <details className="study-setup"><summary><Workflow size={16} />Time Study setup<ChevronDown size={16} /></summary><code>{objective.studies}</code></details>}
+        {objective.description !== objective.title && <details className="guide-details"><summary>Guide details<ChevronDown size={14} /></summary><div className="objective-description">{objective.description.split('\n\n').map((text, paragraph) => <p key={paragraph}><ResourceText text={text} /></p>)}</div></details>}
       </div>
       <div className="card-actions">
         <Button className={`achieve-button ${achieved ? 'undo-button' : ''}`} variant={achieved ? 'outline' : 'default'} aria-pressed={achieved} onClick={onToggle}>{achieved ? <RotateCcw size={17} /> : <Check size={18} />}{achieved ? 'Undo achievement' : 'Mark as achieved'}</Button>

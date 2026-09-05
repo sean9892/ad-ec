@@ -8,6 +8,91 @@ from xml.etree import ElementTree as ET
 
 NS = {'m': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 SOURCE_URL = 'https://docs.google.com/spreadsheets/d/1NrYADsW4s7wRYTE91Z0EFHbXcHaswuuMzG9a2WyGG0A/edit?gid=1524747248#gid=1524747248'
+COPY = json.loads(Path(__file__).with_name('objective-copy.json').read_text())
+
+def read_resource_colors(path):
+    """Resolve actual rich-text colors from the sheet's AM/IP/EP/TT checkpoint."""
+    drawing_ns = {'a': 'http://schemas.openxmlformats.org/drawingml/2006/main'}
+    with zipfile.ZipFile(path) as archive:
+        theme = ET.fromstring(archive.read('xl/theme/theme1.xml'))
+        scheme = theme.find('a:themeElements/a:clrScheme', drawing_ns)
+        # SpreadsheetML theme indices differ from the DrawingML element order.
+        names = ['lt1', 'dk1', 'lt2', 'dk2', 'accent1', 'accent2', 'accent3', 'accent4', 'accent5', 'accent6', 'hlink', 'folHlink']
+        theme_colors = []
+        for name in names:
+            node = scheme.find(f'a:{name}', drawing_ns)[0]
+            theme_colors.append(node.attrib.get('val', node.attrib.get('lastClr')))
+        strings = ET.fromstring(archive.read('xl/sharedStrings.xml'))
+        sheet = ET.fromstring(archive.read('xl/worksheets/sheet1.xml'))
+        cell = sheet.find('.//m:c[@r="B24"]', NS)
+        runs = strings[int(cell.find('m:v', NS).text)].findall('m:r', NS)
+        colors = {}
+        for run in runs:
+            text = ''.join(run.find('m:t', NS).itertext())
+            color = run.find('m:rPr/m:color', NS)
+            if color is None:
+                continue
+            rgb = color.attrib.get('rgb')
+            if rgb is None:
+                rgb = theme_colors[int(color.attrib['theme'])]
+            for resource in ('AM', 'IP', 'EP', 'TT'):
+                if re.search(resource + r'\b', text):
+                    colors.setdefault(resource, '#' + rgb[-6:])
+        assert set(colors) == {'AM', 'IP', 'EP', 'TT'}
+        return colors
+
+def requirement(text):
+    quantity, _, label = text.partition('|')
+    match = re.fullmatch(r'\s*(.+?)\s*(AM|IP|EP|TT)(\+)?\s*', quantity, re.I)
+    assert match, f'Invalid resource requirement: {text}'
+    return dict(amount=match[1].strip() + (match[3] or ''), resource=match[2].upper(), label=label.strip())
+
+def compact_objective(objective):
+    """Keep the original note for reference; author the short default card separately."""
+    copy = COPY.get(objective['id'])
+    if copy:
+        objective['shortTitle'], objective['summary'], targets = copy
+        objective['requirements'] = [requirement(target) for target in targets]
+        if objective['id'] in {'planner-6', 'planner-9', 'planner-20', 'planner-39', 'planner-58', 'planner-60', 'planner-103', 'planner-108'}:
+            objective['title'] = copy[0]
+        return
+    description = objective['description']
+    if objective.get('challenge'):
+        objective['shortTitle'] = objective['title']
+        qualifier = 'required' if re.search(r'Require\s*:', description) else 'recommended'
+        plus = '+' if re.search(r'\d+TT\+', description) else ''
+        targets = [f"{objective['timeTheorems']}{plus} TT | {qualifier}"] if objective['timeTheorems'] else []
+        if objective['ipGoal']:
+            targets.append(f"e{int(objective['ipGoal']):,} IP | goal")
+        objective['requirements'] = [requirement(target) for target in targets]
+        after_time = re.split(r'(?:Average Time|Time)\s*:', description, maxsplit=1)[-1]
+        summary = after_time.partition(',')[2].strip().rstrip('.')
+        replacements = {
+            "Wait for Time Shards when crunches don't give more IP": 'Wait for Time Shards when IP stalls',
+            'Farm requirement with TS73 path then respec after buying EC3': 'Unlock via TS73, buy EC3, then respec',
+            'Farm to requirement with TS73 path then respec after buying EC3': 'Unlock via TS73, buy EC3, then respec',
+            'Farm to requirement with TS73 path then respec after buying EC7': 'Unlock via TS73, buy EC7, then respec',
+            'Start an IC at the beginning to get an achievement, exit IC and start EC1 again': 'Start an IC for the achievement, exit, then restart EC1',
+            'Recommended to have ': 'Have ',
+            'which slows replicanti by 10x': 'which slows Replicanti 10×',
+            'and makes this challenge easier': 'to ease the challenge',
+            'and makes this challenge faster': 'to speed up the challenge',
+            'All ID into ID1': 'Buy only ID1',
+            'Use EC8 trick of TS133': 'Delay TS133 until the final push',
+        }
+        for old, new in replacements.items():
+            summary = summary.replace(old, new)
+        summary = re.sub(r'\s+,\s*', '; ', summary)
+        objective['summary'] = summary + '.' if summary else ''
+    else:
+        is_tree = description.startswith('At Total')
+        objective['shortTitle'] = 'Update the EP farming tree' if is_tree else 'Farm Time Theorems'
+        target = re.search(r'(\d+)TT(\+)?', description)
+        assert target, f"Missing compact copy: {objective['id']}"
+        objective['requirements'] = [requirement(target[1] + ' TT' + (target[2] or ''))]
+        objective['summary'] = ''
+        if is_tree and '201 to use TS72' in description:
+            objective['summary'] = 'Use TS201 to add the TS72 path.'
 
 EARLY_TITLES = {
  10: 'Buy your first Time Dimension', 14: 'Reach e426 IP and earn 3 EP',
@@ -104,7 +189,11 @@ def extract(path):
     assert actual == challenge_order, 'Planner and challenge-order sheets disagree'
     assert len(set(actual)) == 60, 'Expected 60 unique Eternity Challenge completions'
     assert len({o['id'] for o in objectives}) == len(objectives)
-    return dict(sourceUrl=SOURCE_URL, sourceFile=Path(path).name, objectives=objectives)
+    for objective in objectives:
+        compact_objective(objective)
+    return dict(sourceUrl=SOURCE_URL, sourceFile=Path(path).name,
+        resourceColors=read_resource_colors(path),
+        resourceColorSource=dict(sheet='Eternity Start', cell='B24'), objectives=objectives)
 
 if __name__ == '__main__':
     data = extract(sys.argv[1])
