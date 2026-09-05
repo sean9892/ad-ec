@@ -9,6 +9,9 @@ import { Progress } from '@/components/ui/progress'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import guide from '@/data/objectives.json'
+import earlyStudies from '@/data/early-studies.json'
+import { StudyTree, RouteBadges } from '@/components/study-tree'
+import { parseStudies } from '@/lib/studies'
 import { readProgress, STORAGE_KEY, toggleCompleted } from '@/lib/progress'
 
 type Objective = { id: string; title: string; shortTitle: string; summary: string; requirements: Requirement[]; description: string; section: string; kind: string; studies?: string | null; challenge?: string | null; timeTheorems?: number | null; duration?: string | null; ipGoal?: string | null; source: { sheet: string; row: number } }
@@ -22,7 +25,7 @@ function initialProgress() {
   catch { return readProgress(null, ids) }
 }
 
-function ObjectiveList({ active, completed, onSelect }: { active: number; completed: Set<string>; onSelect: (index: number) => void }) {
+function ObjectiveList({ active, completed, onSelect, collapsed, onCollapse }: { collapsed: Set<string>; onCollapse: (group: string) => void; active: number; completed: Set<string>; onSelect: (index: number) => void }) {
   const navigation = useRef<HTMLElement>(null)
   useEffect(() => {
     const nav = navigation.current
@@ -36,8 +39,8 @@ function ObjectiveList({ active, completed, onSelect }: { active: number; comple
   }, [active])
   return <nav className="objective-list" ref={navigation} aria-label="All objectives">
     {groups.map((group, groupIndex) => <div className="objective-group" key={group}>
-      <h3><span>{String(groupIndex + 1).padStart(2, '0')}</span>{group}</h3>
-      <ol>{objectives.map((objective, index) => objective.section !== group ? null : <li key={objective.id}>
+      <h3><button className="section-toggle" aria-expanded={!collapsed.has(group)} onClick={() => onCollapse(group)}><span>{String(groupIndex + 1).padStart(2, '0')}</span>{group}<ChevronDown size={14} /></button></h3>
+      <ol hidden={collapsed.has(group)}>{objectives.map((objective, index) => objective.section !== group ? null : <li key={objective.id}>
         <button className={`objective-link ${completed.has(objective.id) ? 'is-complete' : ''}`} aria-current={index === active ? 'step' : undefined} onClick={() => onSelect(index)}>
           <span className="step-indicator" aria-hidden="true">{completed.has(objective.id) ? <Check size={12} strokeWidth={3} /> : index === active ? <span /> : null}</span>
           <span className="objective-link-title"><ResourceText text={objective.title} /></span>
@@ -64,7 +67,9 @@ function CopyrightInfo() {
   </Dialog>
 }
 
-function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComplete }: { objective: Objective; index: number; achieved: boolean; onToggle: () => void; onNext: () => void; allComplete: boolean }) {
+function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComplete, active }: { active: boolean; objective: Objective; index: number; achieved: boolean; onToggle: () => void; onNext: () => void; allComplete: boolean }) {
+  const early = (earlyStudies as Record<string, { studies: number[]; added: number[] }>)[objective.id]
+  const studies = early?.studies ?? parseStudies(objective.studies)
   const Icon = objective.kind === 'challenge' ? Flag : objective.kind === 'study' ? Workflow : Sparkles
   return <div className="objective-content">
     <div className="section-caption"><span className="caption-line" />{objective.section}<span className="caption-line" /></div>
@@ -76,7 +81,8 @@ function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComple
         {objective.requirements.length > 0 && <div className="requirement-badges" aria-label="Resource requirements">{objective.requirements.map((requirement, index) => <ResourceBadge key={index} requirement={requirement} />)}</div>}
         {objective.duration && <div className="challenge-duration"><Clock3 size={14} />{objective.duration.replaceAll('~', '–')}</div>}
         {objective.summary && <p className="objective-summary"><ResourceText text={objective.summary} /></p>}
-        {objective.studies && <details className="study-setup"><summary><Workflow size={16} />Time Study setup<ChevronDown size={16} /></summary><code>{objective.studies}</code></details>}
+        {objective.kind === 'challenge' && <RouteBadges studies={studies} />}
+        {(early || studies.length > 0) && <StudyTree studies={studies} added={early?.added} early={!!early} active={active} />}
         {objective.description !== objective.title && <details className="guide-details"><summary>Guide details<ChevronDown size={14} /></summary><div className="objective-description">{objective.description.split('\n\n').map((text, paragraph) => <p key={paragraph}><ResourceText text={text} /></p>)}</div></details>}
       </div>
       <div className="card-actions">
@@ -92,6 +98,8 @@ export default function App() {
   const [saved] = useState(initialProgress)
   const [completed, setCompleted] = useState(saved.completed)
   const [active, setActive] = useState(Math.max(0, ids.indexOf(saved.current)))
+  const [collapsed, setCollapsed] = useState<Set<string>>(() => new Set())
+  const toggleSection = (group: string) => setCollapsed(previous => { const next = new Set(previous); if(next.has(group)) next.delete(group); else next.add(group); return next })
   const [mobileOpen, setMobileOpen] = useState(false)
   const [storageUnavailable, setStorageUnavailable] = useState(false)
   const [announcement, setAnnouncement] = useState('')
@@ -156,12 +164,12 @@ export default function App() {
     <aside className="desktop-sidebar">
       <div className="brand"><span className="brand-icon"><InfinityIcon size={27} strokeWidth={1.7} /></span><div><span className="brand-game">ANTIMATTER DIMENSIONS</span><h2>Eternity guide<span className="brand-period">.</span></h2></div></div>
       <div className="list-heading"><span>ALL OBJECTIVES</span><span>{objectives.length}</span></div>
-      <ObjectiveList active={active} completed={completeSet} onSelect={selectObjective} />
+      <ObjectiveList collapsed={collapsed} onCollapse={toggleSection} active={active} completed={completeSet} onSelect={selectObjective} />
       <div className="sidebar-progress"><div className="progress-label"><span>Your progress</span><strong>{percent}%</strong></div><Progress value={percent} aria-label="Objectives achieved" /><div className="progress-count"><span><b>{completed.length}</b> of {objectives.length} achieved</span><CheckCheck size={16} /></div><div className="storage-note"><LockKeyhole size={12} />{storageUnavailable ? 'Progress is saved for this session only' : 'Progress saved in this browser'}</div></div>
     </aside>
     <main className="workspace">
       <header className="topbar">
-        <div className="page-context"><Sheet open={mobileOpen} onOpenChange={setMobileOpen}><SheetTrigger render={<Button className="mobile-menu" variant="ghost" size="icon" aria-label="Open all objectives" />}><List size={21} /></SheetTrigger><SheetContent side="left" className="mobile-objectives"><SheetHeader><SheetTitle>Eternity guide</SheetTitle><SheetDescription>{completed.length} of {objectives.length} objectives achieved</SheetDescription></SheetHeader><ObjectiveList active={active} completed={completeSet} onSelect={selectObjective} /></SheetContent></Sheet><BookOpen size={17} className="context-icon" /><span>Eternity & challenges</span><span className="context-divider">/</span><span className="context-step">{pad(active + 1)}</span></div>
+        <div className="page-context"><Sheet open={mobileOpen} onOpenChange={setMobileOpen}><SheetTrigger render={<Button className="mobile-menu" variant="ghost" size="icon" aria-label="Open all objectives" />}><List size={21} /></SheetTrigger><SheetContent side="left" className="mobile-objectives"><SheetHeader><SheetTitle>Eternity guide</SheetTitle><SheetDescription>{completed.length} of {objectives.length} objectives achieved</SheetDescription></SheetHeader><ObjectiveList collapsed={collapsed} onCollapse={toggleSection} active={active} completed={completeSet} onSelect={selectObjective} /></SheetContent></Sheet><BookOpen size={17} className="context-icon" /><span>Eternity & challenges</span><span className="context-divider">/</span><span className="context-step">{pad(active + 1)}</span></div>
         <CopyrightInfo />
       </header>
       <div className="journey-bar"><span className="journey-title">One objective at a time.</span><Button variant="ghost" className="resume-button" disabled={firstIncomplete < 0 || active === firstIncomplete} onClick={() => selectObjective(firstIncomplete)}><Flag size={14} />{firstIncomplete < 0 ? 'Guide complete' : 'Next unfinished'}</Button></div>
@@ -173,7 +181,7 @@ export default function App() {
         }
       }}>
         {objectives.map((objective, index) => <section key={objective.id} className="objective-slide" ref={element => { sections.current[index] = element }} aria-label={`Objective ${index + 1} of ${objectives.length}`} inert={index !== active}>
-          <ObjectiveCard objective={objective} index={index} achieved={completeSet.has(objective.id)} onToggle={() => toggle(index)} onNext={() => navigate(index + 1)} allComplete={completed.length === objectives.length} />
+          <ObjectiveCard active={index === active} objective={objective} index={index} achieved={completeSet.has(objective.id)} onToggle={() => toggle(index)} onNext={() => navigate(index + 1)} allComplete={completed.length === objectives.length} />
         </section>)}
       </div>
       <footer className="workspace-footer"><div className="keyboard-hint"><span><ArrowUp size={12} /></span><span><ArrowDown size={12} /></span><span>to navigate</span></div><span className="position-counter"><b>{pad(active + 1)}</b><span> / {pad(objectives.length)}</span></span><div className="navigation-buttons"><Button variant="outline" size="icon" aria-label="Previous objective" disabled={active === 0} onClick={() => navigate(active - 1)}><ArrowUp size={17} /></Button><Button variant="outline" size="icon" aria-label="Next objective" disabled={active === objectives.length - 1} onClick={() => navigate(active + 1)}><ArrowDown size={17} /></Button></div></footer>

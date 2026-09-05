@@ -53,3 +53,15 @@ npm test
 Completion keys use stable source sheet/row IDs rather than display titles or array positions. Tests cover malformed storage, deduplication, removed IDs, completion/undo, reload round trips, unique objective IDs, and the complete challenge set. Production builds type-check the app. Automated browser interaction tests have not been run.
 
 The shadcn component license is included in `LICENSE-shadcn.md`.
+
+## Time Study trees and navigation
+
+Sidebar sections collapse independently; desktop and mobile share section state. Eternity Start trees open by default and show the end-of-objective snapshot, with new studies marked NEW. Challenge trees start collapsed. Mermaid loads when an active card needs a diagram, in a separate scrollable viewport.
+
+`src/data/early-studies.json` records all 56 early snapshots, including incremental purchases and respec removals. Row 56 uses the guide's recommended Active alternative. Multi-stage objectives show their final setup; intermediate steps remain in Guide details. This curated data is independent of workbook extraction.
+
+Resource badges identify Antimatter, Infinity, or Time paths; Activeness badges identify Active, Passive, or Idle. Multiple selected paths get separate badges. None means no path selected. Colors follow the game's standard theme. EC10 is shown as the completion gate to row 19.
+
+References: [Steam screenshots](https://store.steampowered.com/app/1399720/Antimatter_Dimensions/) for vertical branching layout, [official study connections](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/src/core/time-studies/time-study-connections.js) for topology, and [official study colors](https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/5409e320cecef96a917cca1dfb68f1f183e499ca/public/stylesheets/time-studies.css).
+
+Validation: 13 unit tests and the TypeScript/production build pass. Browser interaction testing was not performed.
