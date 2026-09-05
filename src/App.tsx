@@ -12,7 +12,9 @@ import guide from '@/data/objectives.json'
 import earlyStudies from '@/data/early-studies.json'
 import { StudyTree, RouteBadges } from '@/components/study-tree'
 import { parseStudies } from '@/lib/studies'
-import { readProgress, STORAGE_KEY, toggleCompleted } from '@/lib/progress'
+import { readProgress, STORAGE_KEY, toggleCompleted, nextAfterAchievement } from '@/lib/progress'
+import { readSettings, SETTINGS_KEY } from '@/lib/settings'
+import { SettingsPanel } from '@/components/settings-panel'
 
 type Objective = { id: string; title: string; shortTitle: string; summary: string; requirements: Requirement[]; description: string; section: string; kind: string; studies?: string | null; challenge?: string | null; timeTheorems?: number | null; duration?: string | null; ipGoal?: string | null; source: { sheet: string; row: number } }
 const objectives = guide.objectives as Objective[]
@@ -23,6 +25,11 @@ const pad = (value: number) => String(value).padStart(3, '0')
 function initialProgress() {
   try { return readProgress(localStorage.getItem(STORAGE_KEY), ids) }
   catch { return readProgress(null, ids) }
+}
+
+function initialSettings() {
+  try { return readSettings(localStorage.getItem(SETTINGS_KEY)) }
+  catch { return readSettings(null) }
 }
 
 function ObjectiveList({ active, completed, onSelect, collapsed, onCollapse }: { collapsed: Set<string>; onCollapse: (group: string) => void; active: number; completed: Set<string>; onSelect: (index: number) => void }) {
@@ -82,7 +89,7 @@ function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComple
         {objective.duration && <div className="challenge-duration"><Clock3 size={14} />{objective.duration.replaceAll('~', '–')}</div>}
         {objective.summary && <p className="objective-summary"><ResourceText text={objective.summary} /></p>}
         {objective.kind === 'challenge' && <RouteBadges studies={studies} />}
-        {(early || studies.length > 0) && <StudyTree studies={studies} early={!!early} active={active} />}
+        {(early || studies.length > 0) && <StudyTree studies={studies} active={active} />}
         {objective.description !== objective.title && <details className="guide-details"><summary>Guide details<ChevronDown size={14} /></summary><div className="objective-description">{objective.description.split('\n\n').map((text, paragraph) => <p key={paragraph}><ResourceText text={text} /></p>)}</div></details>}
       </div>
       <div className="card-actions">
@@ -95,6 +102,9 @@ function ObjectiveCard({ objective, index, achieved, onToggle, onNext, allComple
 }
 
 export default function App() {
+  const [settings, setSettings] = useState(initialSettings)
+  const [settingsStorageUnavailable, setSettingsStorageUnavailable] = useState(false)
+  const [pendingAdvance, setPendingAdvance] = useState<number | null>(null)
   const [saved] = useState(initialProgress)
   const [completed, setCompleted] = useState(saved.completed)
   const [active, setActive] = useState(Math.max(0, ids.indexOf(saved.current)))
@@ -132,6 +142,22 @@ export default function App() {
     } catch { setStorageUnavailable(true) }
   }, [completed, active])
 
+  useEffect(() => {
+    try {
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings))
+      setSettingsStorageUnavailable(false)
+    } catch { setSettingsStorageUnavailable(true) }
+  }, [settings])
+
+  useLayoutEffect(() => {
+    if (pendingAdvance === null) return
+    // Measure after the achieved card has updated; keep keyboard focus out of
+    // the card that becomes inert as the next objective scrolls into view.
+    scroller.current?.focus({ preventScroll: true })
+    navigate(pendingAdvance)
+    setPendingAdvance(null)
+  }, [pendingAdvance, navigate])
+
   const onScroll = () => {
     if (frame.current !== null) return
     frame.current = requestAnimationFrame(() => {
@@ -153,7 +179,9 @@ export default function App() {
   const toggle = (index: number) => {
     const objective = objectives[index]
     setCompleted(previous => toggleCompleted(previous, objective.id))
-    setAnnouncement(`${objective.title}: ${completeSet.has(objective.id) ? 'achievement undone' : 'achieved'}.`)
+    const wasCompleted = completeSet.has(objective.id)
+    setAnnouncement(`${objective.title}: ${wasCompleted ? 'achievement undone' : 'achieved'}.`)
+    setPendingAdvance(nextAfterAchievement(index, objectives.length, wasCompleted, settings.autoAdvance))
   }
 
   const selectObjective = (index: number) => { navigate(index, 'instant'); setActive(index); setMobileOpen(false) }
@@ -169,8 +197,8 @@ export default function App() {
     </aside>
     <main className="workspace">
       <header className="topbar">
-        <div className="page-context"><Sheet open={mobileOpen} onOpenChange={setMobileOpen}><SheetTrigger render={<Button className="mobile-menu" variant="ghost" size="icon" aria-label="Open all objectives" />}><List size={21} /></SheetTrigger><SheetContent side="left" className="mobile-objectives"><SheetHeader><SheetTitle>Eternity guide</SheetTitle><SheetDescription>{completed.length} of {objectives.length} objectives achieved</SheetDescription></SheetHeader><ObjectiveList collapsed={collapsed} onCollapse={toggleSection} active={active} completed={completeSet} onSelect={selectObjective} /></SheetContent></Sheet><BookOpen size={17} className="context-icon" /><span>Eternity & challenges</span><span className="context-divider">/</span><span className="context-step">{pad(active + 1)}</span></div>
-        <CopyrightInfo />
+        <div className="page-context"><Sheet open={mobileOpen} onOpenChange={setMobileOpen}><SheetTrigger render={<Button className="mobile-menu" variant="ghost" size="icon" aria-label="Open all objectives" />}><List size={21} /></SheetTrigger><SheetContent side="left" className="mobile-objectives"><SheetHeader><SheetTitle>Eternity guide</SheetTitle><SheetDescription>{completed.length} of {objectives.length} objectives achieved</SheetDescription></SheetHeader><ObjectiveList collapsed={collapsed} onCollapse={toggleSection} active={active} completed={completeSet} onSelect={selectObjective} /></SheetContent></Sheet><BookOpen size={17} className="context-icon" /><span className="context-title">Eternity & challenges</span><span className="context-divider">/</span><span className="context-step">{pad(active + 1)}</span></div>
+        <div className="topbar-actions"><SettingsPanel autoAdvance={settings.autoAdvance} onAutoAdvanceChange={autoAdvance => setSettings({ version: 1, autoAdvance })} sessionOnly={settingsStorageUnavailable} /><CopyrightInfo /></div>
       </header>
       <div className="journey-bar"><span className="journey-title">One objective at a time.</span><Button variant="ghost" className="resume-button" disabled={firstIncomplete < 0 || active === firstIncomplete} onClick={() => selectObjective(firstIncomplete)}><Flag size={14} />{firstIncomplete < 0 ? 'Guide complete' : 'Next unfinished'}</Button></div>
       <div id="objectives" className="objective-scroller" ref={scroller} tabIndex={0} role="region" aria-label="Objective cards. Scroll or use arrow keys to navigate." onScroll={onScroll} onKeyDown={event => {

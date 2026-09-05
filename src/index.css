@@ -3,6 +3,7 @@
 @import './preset-theme.css';
 @import './preset-nova.css';
 @import './preset-badge.css';
+@import './preset-switch.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -234,3 +235,15 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 @media (max-width:600px) { .study-diagram { height:240px; } }
 .study-diagram { cursor:grab; touch-action:none; user-select:none; }
 .study-diagram.is-dragging { cursor:grabbing; }
+
+.topbar-actions { display:flex; align-items:center; gap:5px; flex-shrink:0; }
+.page-context { min-width:0; }
+.context-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.setting-row { display:flex; align-items:center; gap:24px; justify-content:space-between; margin-top:24px; padding-top:20px; border-top:1px solid var(--border); }
+.setting-row label { font-size:.9375rem; font-weight:550; cursor:pointer; }
+.setting-row p { margin:7px 0 0; color:var(--muted-foreground); font-size:.8125rem; line-height:1.6; }
+.settings-panel .settings-storage-note { font-size:.75rem; margin-bottom:0; }
+@media (max-width:600px) {
+  .page-context .context-title, .page-context .context-divider, .page-context .context-step { display:none; }
+  .topbar-actions { gap:2px; }
+}

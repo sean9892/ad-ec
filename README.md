@@ -6,7 +6,7 @@ Antimatter Dimensions Eternity Challenge Guide: a static, single-page companion 
 
 - Read one objective at a time. Scroll or swipe to browse nearby objectives; the view snaps into place with a card centered in the available space.
 - Jump to any of the 164 objectives in the left sidebar. On smaller screens, open the objective list from the top-left menu.
-- Mark individual objectives as achieved and undo any completion. Marking one objective never changes other objectives.
+- Mark individual objectives as achieved and undo any completion. Marking one objective never changes other objectives. Achieving an objective scrolls to the next one by default; undo and the final objective do not advance. Open **Setting** beside **Copyright Info** to switch automatic scroll-down on or off. The preference is saved in this browser.
 - Progress and the current position are saved in this browser with `localStorage`. No account or backend is needed. Clearing browser data clears progress; storage restrictions fall back to the current session.
 - Use the arrow buttons, or focus the card region and use Arrow Up/Down, Page Up/Down, Home, or End. Reduced-motion preferences are respected.
 - Open **Copyright Info** in the top-right for attribution and the original spreadsheet.
@@ -66,7 +66,7 @@ The shadcn component license is included in `LICENSE-shadcn.md`.
 
 ## Time Study trees and navigation
 
-Sidebar sections collapse independently; desktop and mobile share section state. Eternity Start trees open by default and show the end-of-objective snapshot, with the full tree visible and unbought studies gray. Challenge trees start collapsed. Mermaid loads when an active card needs a diagram, in a separate viewport supporting mouse/touch drag-to-pan, scrolling, and keyboard navigation.
+Sidebar sections collapse independently; desktop and mobile share section state. All Time Study viewers start collapsed. Open a viewer to see the full tree for the objective, with unbought studies gray. Mermaid loads when an active card needs a diagram, in a separate viewport supporting mouse/touch drag-to-pan, scrolling, and keyboard navigation.
 
 `src/data/early-studies.json` records all 56 early snapshots, including incremental purchases and respec removals. Row 56 uses the guide's recommended Active alternative. Multi-stage objectives show their final setup; intermediate steps remain in Guide details. This curated data is independent of workbook extraction.
 

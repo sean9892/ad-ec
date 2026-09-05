@@ -68,8 +68,8 @@ function Diagram({ studies }: { studies: number[] }) {
 export function RouteBadges({ studies }: { studies: number[] }) {
   return <div className="route-information">{Object.entries(studyRoutes(studies)).map(([label,routes])=><div className="route-field" key={label}><span>{label}</span>{routes.map(route=><Badge className="route-badge" key={route} style={{backgroundColor:routeColors[route].background,color:routeColors[route].color}}>{route}</Badge>)}</div>)}</div>
 }
-export function StudyTree({ studies, early=false, active }: { studies:number[]; early?:boolean; active:boolean }) {
-  const [open,setOpen]=useState(early)
+export function StudyTree({ studies, active }: { studies:number[]; active:boolean }) {
+  const [open,setOpen]=useState(false)
   return <details className="study-setup" open={open} onToggle={event=>setOpen(event.currentTarget.open)}>
     <summary><Workflow size={16}/>Time Study setup<ChevronDown size={16}/></summary>
     {open && <div className="study-tree-body">
