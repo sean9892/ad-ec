@@ -1,0 +1,2406 @@
+{
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1NrYADsW4s7wRYTE91Z0EFHbXcHaswuuMzG9a2WyGG0A/edit?gid=1524747248#gid=1524747248",
+  "sourceFile": "Antimatter Dimensions - Eternity and Eternity Challenges (1).xlsx",
+  "objectives": [
+    {
+      "id": "eternity-10",
+      "title": "Buy your first Time Dimension",
+      "description": "With your first EP point buy Time Dimension 1 (TD1), go to the Infinity Upgrades page and enable the auto x2 IP multiplier. Progress through everything again, remember to Break Infinity, complete all normal challenges and ICs.",
+      "section": "First Time Studies",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 10
+      }
+    },
+    {
+      "id": "eternity-14",
+      "title": "Reach e426 IP and earn 3 EP",
+      "description": "The final goal is to get e426IP which gives 3EP on Eternity. Buying all TT along the way will get 9TT, these should be spent into TS : 11,21,22,33.",
+      "section": "First Time Studies",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 14
+      }
+    },
+    {
+      "id": "eternity-15",
+      "title": "Enable Respec Time Studies",
+      "description": "Before you Eternity press \"Respec Time Studies on next Eternity\" to enable it, this will refund all your spent TT back so you can select different TS.",
+      "section": "First Time Studies",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 15
+      }
+    },
+    {
+      "id": "eternity-16",
+      "title": "Get 11 TT and unlock TS42",
+      "description": "Purchases so far : e80,000AM , e400IP . With 3EP spend this on 2 TT purchases for 1EP and 2EP. Giving a total of 11TT to use in the TS tree. TS setup : 11,22,32,42 .",
+      "section": "First Time Studies",
+      "kind": "milestone",
+      "studies": "11,22,32,42",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 16
+      }
+    },
+    {
+      "id": "eternity-22",
+      "title": "Get TS51",
+      "description": "The next goal is to push and pick up TT from purchases of e100,000AM and e500IP. After e500IP you can Eternity for 4EP. Purchase the 4EP TT, you now have 3TT to spend on the TS tree, put this into TS51 for a nice boost to IP.",
+      "section": "First Time Studies",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 22
+      }
+    },
+    {
+      "id": "eternity-23",
+      "title": "Get TS61",
+      "description": "Now do an even longer push to pick up TT purchases e120,000AM and e600IP, RGs are the primary means of pushing. Continue the run to e614IP so you can Eternity for 8EP. Purchase the 8EP TT, and add TS61.",
+      "section": "First Time Studies",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 23
+      }
+    },
+    {
+      "id": "eternity-24",
+      "title": "Get e120,000 AM, e600 IP, 8 EP TT",
+      "description": "Purchases so far : e120,000AM , e600IP , 8EP TT = 17TT. TS setup : 11,22,32,42,51,61 .",
+      "section": "First Time Studies",
+      "kind": "milestone",
+      "studies": "11,22,32,42,51,61",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 24
+      }
+    },
+    {
+      "id": "eternity-28",
+      "title": "Reach Eternity Milestone 5",
+      "description": "Remember to check all upgrade pages and the Infinity Dimensions page and buy everything available in each Eternity. Milestone 5 unlocks more Autocrunch options, I recommend X times highest at 1e10.",
+      "section": "Eternity milestones",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 28
+      }
+    },
+    {
+      "id": "eternity-29",
+      "title": "Reach EM7 and buy EU1 + EU2",
+      "description": "Before Milestone 7 I do all IC except IC5, with TS42 you don't need to stress about that challenge anymore. Following EM7 you can up the crunch buyer to 1e20. Spend EP on Eternity Upgrades 1 + 2.",
+      "section": "Eternity milestones",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 29
+      }
+    },
+    {
+      "id": "eternity-30",
+      "title": "Reach EM9 and tune your autobuyers",
+      "description": "Milestone 9 is a big boost to speed, check to make sure the Galaxy autobuyer is set to 0s. As for Max Dimboost, set this to 0.4s so it does not interfere with the Galaxy autobuyer. Under 30s Eternity (R104) is possible now.",
+      "section": "Eternity milestones",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 30
+      }
+    },
+    {
+      "id": "eternity-31",
+      "title": "Buy the 500 EP ×5 EP upgrade",
+      "description": "You can pick up extra TDs that cost less than 100EP as they help progress through each Eternity faster. Save up for and buy the 500EP x5EP upgrade to really get the EP income.",
+      "section": "Eternity milestones",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 31
+      }
+    },
+    {
+      "id": "eternity-32",
+      "title": "Reach Eternity Milestone 25",
+      "description": "Milestone 25 finally removes the issue of having to manually unlock and buy Infinity Dimensions making each Eternity much smoother. Make sure to enable the Replicanti autobuyers when they are unlocked.",
+      "section": "Eternity milestones",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 32
+      }
+    },
+    {
+      "id": "eternity-33",
+      "title": "Get TS71 and reach 100 Eternities",
+      "description": "Spend EP into TDs and TT for anything costing 500EP or less. This will be 5 more purchases into the EP for TT, though you only need 4 more for TS71. Keep pushing to EM100 to get the Eternity autobuyer.",
+      "section": "Eternity milestones",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 33
+      }
+    },
+    {
+      "id": "eternity-34",
+      "title": "Get e120,000 AM, e600 IP, 256 EP TT",
+      "description": "Purchases so far : e120,000AM , e600IP , 256EP TT = 22TT. TS setup : 11,22,32,42,51,61,71",
+      "section": "Eternity milestones",
+      "kind": "milestone",
+      "studies": "11,22,32,42,51,61,71",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 34
+      }
+    },
+    {
+      "id": "eternity-37",
+      "title": "Buy the next ×5 EP upgrade and EU3",
+      "description": "At 100 eternities set up the new Eternity Autobuyer to 300EP. Let the autobuyers farm up to 2.5e4EP for the next x5 EP upgrade. After that let the autobuyer farm up to 5e4EP for Eternity Upgrade 3.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 37
+      }
+    },
+    {
+      "id": "eternity-38",
+      "title": "Get the “Never Again” achievement",
+      "description": "With EU3, disable Eternity autobuyer. Let the auto crunches get you to e600IP, rerun all ICs (retry challenges on) and get \"Never Again\" achievement which should give a 6.38e14 multiplier on EU3.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 38
+      }
+    },
+    {
+      "id": "eternity-39",
+      "title": "Get e200,000 AM and e900 IP",
+      "description": "Now focus on pushing AM + IP to get TT.You should be able to push to e200,000AM and e900IP quickly, remember to start getting to max RG then crunching. When you eternity spend EP on TDs.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 39
+      }
+    },
+    {
+      "id": "eternity-40",
+      "title": "Get TS81, TS91, and TS101",
+      "description": "The TS setup you want is : 11,22,32,42,51,61,71,81,91,101 ->21->33. You can always buy TS21 while pushing if you only have 3TT spare. Respec if you get 1 more TT to afford TS91 / TS101 instead of TS21.",
+      "section": "Building your study tree",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 40
+      }
+    },
+    {
+      "id": "eternity-41",
+      "title": "Farm to 40 TT",
+      "description": "Do several runs with focus on EP/min, buying TDs 3.3e4EP and below. Now do a long run and purchase e220,000AM and e1,100IP. Back to farming EP/min again to be put into EP TT to 6.55e4EP so you have 40TT.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 41
+      }
+    },
+    {
+      "id": "eternity-42",
+      "title": "Get a 3–4 second Eternity",
+      "description": "Change the Eternity autobuyer to 0 and enable it. Test crunchs 1e25 / e35 / e45 / e55 / e65 to get your fastest Eternity to a low 4s or even 3s (Try pressing M to get faster results). This will help boost TS92 for the next tree.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 42
+      }
+    },
+    {
+      "id": "eternity-43",
+      "title": "Switch to the Infinity Dimension path",
+      "description": "Purchases so far : e220,000AM , e1,100IP , 6.55e4EP TT = 40TT. Respec to the new TS setup : 11,22,32,42,51,61,72,82,92,102",
+      "section": "Building your study tree",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,72,82,92,102",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 43
+      }
+    },
+    {
+      "id": "eternity-46",
+      "title": "Improve your fastest Eternity",
+      "description": "Continue running 0 on Eternity autobuyer and testing crunch values to lower your fastest eternity time possibly to mid 3s. Once you have that disable the Eternity autobuyer and lets see what EP/min is available.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 46
+      }
+    },
+    {
+      "id": "eternity-47",
+      "title": "Get e260,000 AM and e1,200 IP",
+      "description": "1e35 / 1e40 autocrunch works well now. Farm EP/min and buy all TDs below 1e5EP. Buy TT up to 2.62e5EP. Now to push AM + IP. Buy e240,000AM -> e1,200IP -> e260,000AM (Long Push!).",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 47
+      }
+    },
+    {
+      "id": "eternity-48",
+      "title": "Get TS111 and the 1.25e6 EP upgrade",
+      "description": "Repec and swap tree to : 11,22,32,42,51,61,71,81,91,101,111 . Now back to EP/min farming, TS111 will get us more IP but not more AM. Farm to 1.25e6EP and buy the x5 EP upgrade. Keep farming EP/min.",
+      "section": "Building your study tree",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 48
+      }
+    },
+    {
+      "id": "eternity-49",
+      "title": "Get e280,000 AM and e1,400 IP",
+      "description": "Buy all TD below 2e6EP and buy TT to 1.05e6EP. Now to do a long push and buy e280,000AM and e1,400IP getting TS21 and TS33. Do some more EP/min farming to get 4.19e6EP TT.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 49
+      }
+    },
+    {
+      "id": "eternity-50",
+      "title": "Get 52 TT and switch to the ID path",
+      "description": "Purchases so far : e280,000AM , e1,400IP , 4.19e6EP TT = 52TT. Respec to the new TS setup : 11,22,32,42,51,61,72,82,92,102,111",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 50
+      }
+    },
+    {
+      "id": "eternity-51",
+      "title": "Get e300,000 AM and e1,500 IP",
+      "description": "Try for another quick eternity time to buff TS92 even more to get the bonus to e6 or more. Now to go for a long push and pick up e300,000AM and e1,500IP.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 51
+      }
+    },
+    {
+      "id": "eternity-52",
+      "title": "Get TS122 at 54 TT",
+      "description": "Purchases so far : e300,000AM , e1,500IP , 4.19e6EP TT = 54TT. Respec to the new TS setup : 11,22,32,42,51,61,71,81,91,101,111,122",
+      "section": "Building your study tree",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,71,81,91,101,111,122",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 52
+      }
+    },
+    {
+      "id": "eternity-55",
+      "title": "Buy the 6.25e7 EP ×5 EP upgrade",
+      "description": "Set up another EP/min farm and get the next x5 EP upgrade at 6.25e7EP. Continue to farm EP/min spending EP into TT up to 1.34e8EP to get TS21 + TS33 and adjust EP/min farming. Buy TD upto 2e8EP.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 55
+      }
+    },
+    {
+      "id": "eternity-56",
+      "title": "Get e320,000 AM and e1,600 IP",
+      "description": "Continue EP/min farm and get 2.68e8EP TT (or push for 1 more). Now swap TS21 + TS33 over to TS132 (Or use TS121 + TS131 which works much better) and do a long run to get e320,000AM + e1,600IP.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 56
+      }
+    },
+    {
+      "id": "eternity-57",
+      "title": "Buy the 5.37e8 EP Time Theorem",
+      "description": "If you did not get 5.37e8EP TT then use EP/min farming and get that now. This will allow you to set up the Active Tree (Passive can still work doing EP/min but Active will be better).",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 57
+      }
+    },
+    {
+      "id": "eternity-58",
+      "title": "Get the Active tree at 63 TT",
+      "description": "Purchases so far : e320,000AM , e1,600IP , 5.37e8EP TT = 63TT. Respec to the new TS setup : 11,22,32,42,51,61,71,81,91,101,111,121,131,141",
+      "section": "Building your study tree",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,71,81,91,101,111,121,131,141",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 58
+      }
+    },
+    {
+      "id": "eternity-59",
+      "title": "Set up TS121 for a 50× bonus",
+      "description": "Make sure to set up TS121 to 50x for each Active run that you do from now. At first EP/min in a long run will not be as good, but having to do the TS121 setup for short runs is not worth it, run to around e1,600IP.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 59
+      }
+    },
+    {
+      "id": "eternity-60",
+      "title": "Get e340,000 AM and e1,800 IP",
+      "description": "Purchase TD costing less than 1e9EP and buy the TT for 1.07e9EP. Now do a longer run to get e1,700IP and e340,000AM to add in TS21 and continue to e1,800IP.",
+      "section": "Building your study tree",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 60
+      }
+    },
+    {
+      "id": "eternity-61",
+      "title": "Switch to the ID path at 67 TT",
+      "description": "Purchases so far : e340,000AM , e1,800IP , 1.07e9EP TT = 67TT. Make sure TS92 is Capped at 1.07e9x. Respec to the new TS setup : 11,22,32,42,51,61,72,82,92,102,111,121,131",
+      "section": "Building your study tree",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111,121,131",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 61
+      }
+    },
+    {
+      "id": "eternity-64",
+      "title": "Get TS141 and the 3.13e9 EP upgrade",
+      "description": "ID path will let you go further, push to buy e360,000AM and e1,900IP then add in TS21 and get to e380,000AM. Respec to remove TS21 and add in TS141. The next EP purchase is the x5 EP at 3.13e9EP.",
+      "section": "The road to challenges",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 64
+      }
+    },
+    {
+      "id": "eternity-65",
+      "title": "Buy TT through 1.72e10 EP",
+      "description": "Continue Active runs, get all TD below 1.06e10EP then focus on TT purchases up to 1.72e10EP. You should be able to pick up TS21 and e2,000IP while going for the TT and then TS33.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 65
+      }
+    },
+    {
+      "id": "eternity-66",
+      "title": "Get e400,000 AM and e2,100 IP",
+      "description": "Get TD2 costing 1.74e10EP, now push a run to get e400,000AM and e2,100IP. You should have enough EP to get the 3.44e10EP TT.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 66
+      }
+    },
+    {
+      "id": "eternity-67",
+      "title": "Get TS151 at 78 TT",
+      "description": "Purchases so far : e400,000AM , e2,100IP , 3.44e10EP TT = 78TT. Respec to the new TS setup : 11,22,32,42,51,61,72,82,92,102,111,121,131,141,151",
+      "section": "The road to challenges",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111,121,131,141,151",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 67
+      }
+    },
+    {
+      "id": "eternity-68",
+      "title": "Get e440,000 AM and e2,300 IP",
+      "description": "Do a long run picking up e420,000AM -> e2,200IP -> e440,000AM to get TS21 again which can push you to e2,300IP. Now focus getting EP for the 1.56e11EP x5 EP upgrade.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 68
+      }
+    },
+    {
+      "id": "eternity-69",
+      "title": "Get TS161",
+      "description": "With that bought put EP into the 6.87e10EP TT to get TS33 to help farm EP faster. Buy TD below 2e11EP. Push to e460,000AM and e2,400IP respec and change TS21 + TS33 into TS161.",
+      "section": "The road to challenges",
+      "kind": "study",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 69
+      }
+    },
+    {
+      "id": "eternity-70",
+      "title": "Get e480,000 AM and e2,500 IP",
+      "description": "Buy up to 5.50e11EP TT to get TS21 again. Buy TD1 for 2.82e11EP. Do a long run for e480,000AM and e2,500IP to get TS33 back. Now farm EP and buy the 7.81e12EP x5 EP upgrade.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 70
+      }
+    },
+    {
+      "id": "eternity-71",
+      "title": "Buy TT through 4.40e12 EP",
+      "description": "The reason we go for the x5 is that other purchases would not help as much. Do more runs to buy all TD below 4e12EP and then focus on buying TT to 4.40e12EP.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 71
+      }
+    },
+    {
+      "id": "eternity-72",
+      "title": "Get TS162 at 93 TT",
+      "description": "Purchases so far : e480,000AM , e2,500IP , 4.40e12EP TT = 93TT . Respec to the new TS setup : 11,22,32,42,51,61,72,82,92,102,111,121,131,141,151,161,162",
+      "section": "The road to challenges",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111,121,131,141,151,161,162",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 72
+      }
+    },
+    {
+      "id": "eternity-73",
+      "title": "Get e520,000 AM and e2,700 IP",
+      "description": "Now to do a long run and pick up e500,000AM and e2,600IP to get TS21 back, continue the run to pick up e520,000AM and e2,700IP to get TS33. Buy TD1 at 7.63e12EP and now farm EP to buy TT to 3.52e13EP.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 73
+      }
+    },
+    {
+      "id": "eternity-74",
+      "title": "Get TS171 at 100 TT",
+      "description": "Purchases so far : e520,000AM , e2,700IP , 3.52e13EP TT = 100TT . Respec to the new TS setup : 11,22,32,42,51,61,73,83,93,103,111,121,131,141,151,161,171",
+      "section": "The road to challenges",
+      "kind": "study",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,121,131,141,151,161,171",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 74
+      }
+    },
+    {
+      "id": "eternity-77",
+      "title": "Get e560,000 AM and e2,900 IP",
+      "description": "Push far to pick up e540,000AM -> e2,800IP -> e560,000AM and get TS21 to help push for e2,900IP. Now focus on buying the 7.04e13EP TT so you can get TS33. Go for all TD below 1e14EP.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 77
+      }
+    },
+    {
+      "id": "eternity-78",
+      "title": "Buy the 3.9e14 EP ×5 EP upgrade",
+      "description": "Continue EP farming for the 5x EP at 3.9e14EP, buy all TD below 5e14EP and then buy TT up to 2.81e14EP, pick up e580,000AM on your last run.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 78
+      }
+    },
+    {
+      "id": "eternity-79",
+      "title": "Get e600,000 AM and e3,100 IP",
+      "description": "Now respec and swap to TS setup : 11,22,32,42,51,61,73,83,93,103,111,121,131,141,151,161,162,171 . Do a long run to pick up e3,000IP -> e600,000AM -> TS21 -> e3,100IP.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,121,131,141,151,161,162,171",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 79
+      }
+    },
+    {
+      "id": "eternity-80",
+      "title": "Buy the achievement-based Eternity Upgrade",
+      "description": "Spend EP into 5.63e14EP TT to get TS33 back for smoother farming. Spend EP in TD below 1e15EP, you will need to do several runs to farm up 1e16EP for the Eternity Upgrade based on achievements.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 80
+      }
+    },
+    {
+      "id": "eternity-81",
+      "title": "Get e640,000 AM and e3,300 IP",
+      "description": "Try to clean up as many achievements as possible to buff the Eternity Upgrade. Now do a long run to get to e640,000AM and e3,300IP, then purchase the 1.13e15EP TT after the run.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 81
+      }
+    },
+    {
+      "id": "eternity-82",
+      "title": "Get TS31 and set up Eternity farming",
+      "description": "You now have the perfect TT to farm Eternities. Use TS Tree : 11,21,22,31,32,41,42,51,61,72,82,92,102,111,121,131,141,151,161,162,171  . Eternity autobuyer = 0 , Dimboost autobuyer = Disabled , Crunch = 1e112",
+      "section": "The road to challenges",
+      "kind": "study",
+      "studies": "11,21,22,31,32,41,42,51,61,72,82,92,102,111,121,131,141,151,161,162,171",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 82
+      }
+    },
+    {
+      "id": "eternity-83",
+      "title": "Farm at least 20,000 Eternities",
+      "description": "The crunch buyer is what I found works best for me, you can adjust it to try find a better average Eternity time. Get to 20,000 Eternities minimum, it is recommended to get 110,000 for Eternity Upgrade 2.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 83
+      }
+    },
+    {
+      "id": "eternity-84",
+      "title": "Buy the 1.95e16 EP ×5 EP upgrade",
+      "description": "After farming eternities Respec your TS Tree : 11,21,22,31,32,33,42,51,61,73,83,93,103,111,121,131,141,151,161,162,171  . Check autobuyers! Buy all TD below 2e15EP. Now farm to the 1.95e16EP x5 EP upgrade.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": "11,21,22,31,32,33,42,51,61,73,83,93,103,111,121,131,141,151,161,162,171",
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 84
+      }
+    },
+    {
+      "id": "eternity-85",
+      "title": "Get e700,000 AM and e3,600 IP",
+      "description": "Buy all TD below 6e16EP then focus on building up 3e17EP to be used later, add in TS41 when possible. With the extra EP do a longer run to pick up e700,000AM and e3,600IP. Buy TT to get 1.44e17EP TT.",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 85
+      }
+    },
+    {
+      "id": "eternity-86",
+      "title": "Reach 130 TT and prepare for EC1",
+      "description": "Final Purchases = e700,000AM , e3,600IP , 1.44e17EP = 130TT     Eternities : 20,000+ (110,000 Recommended)",
+      "section": "The road to challenges",
+      "kind": "milestone",
+      "studies": null,
+      "source": {
+        "sheet": "Eternity Start",
+        "row": 86
+      }
+    },
+    {
+      "id": "planner-3",
+      "title": "Complete EC1x1",
+      "description": "EC1x1 : Require : 130TT , Average Time : 6~10mins , Start an IC at the beginning to get an achievement, exit IC and start EC1 again.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111,121,131,141,151,161,171|1",
+      "challenge": "EC1x1",
+      "timeTheorems": 130,
+      "duration": "6~10mins",
+      "ipGoal": "1800",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 3
+      }
+    },
+    {
+      "id": "planner-4",
+      "title": "Farm to 135TT",
+      "description": "Farm to 135TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 4
+      }
+    },
+    {
+      "id": "planner-5",
+      "title": "Complete EC2x1",
+      "description": "EC2x1 : Require : 135TT , Average Time : 15~25mins , Wait for Time Shards when crunches don't give more IP.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,121,131,141,151,161,171|2",
+      "challenge": "EC2x1",
+      "timeTheorems": 135,
+      "duration": "15~25mins",
+      "ipGoal": "975",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 5
+      }
+    },
+    {
+      "id": "planner-6",
+      "title": "Farm to 60000 Eternities and",
+      "description": "Farm to 60000 Eternities and then Farm to 140TT, also recommended to have 1e18EP",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 6
+      }
+    },
+    {
+      "id": "planner-7",
+      "title": "Complete EC1x2",
+      "description": "EC1x2 : Recommended : 140TT, Average Time : 15~20mins , 60000+ Eternities needed.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,32,42,51,61,72,82,92,102,111,121,131,141,151,161,162,171|1",
+      "challenge": "EC1x2",
+      "timeTheorems": 140,
+      "duration": "15~20mins",
+      "ipGoal": "2000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 7
+      }
+    },
+    {
+      "id": "planner-8",
+      "title": "Complete EC3x1",
+      "description": "EC3x1 : Require : 140TT, Time : 40mins~1hr, Farm requirement with TS73 path then respec after buying EC3.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,71,81,91,101,111,122,132,142,151,161,162,171|3",
+      "challenge": "EC3x1",
+      "timeTheorems": 140,
+      "duration": "40mins~1hr",
+      "ipGoal": "600",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 8
+      }
+    },
+    {
+      "id": "planner-9",
+      "title": "Get 1.8e308x10 Yo Dawg Achievement",
+      "description": "Get 1.8e308x10 Yo Dawg Achievement, then Farm to 142 or 145TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 9
+      }
+    },
+    {
+      "id": "planner-10",
+      "title": "Complete EC4x1",
+      "description": "EC4x1 : Recommended : 142TT , Average Time : 20~30mins, Fail once, 145TT allows for TS21 and makes this challenge easier.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,33,42,51,61,73,83,93,103,111,123,133,143|4",
+      "challenge": "EC4x1",
+      "timeTheorems": 142,
+      "duration": "20~30mins",
+      "ipGoal": "2750",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 10
+      }
+    },
+    {
+      "id": "planner-11",
+      "title": "Farm to 147TT",
+      "description": "Farm to 147TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 11
+      }
+    },
+    {
+      "id": "planner-12",
+      "title": "Complete EC5x1",
+      "description": "EC5x1 : Require : 147TT , Average Time : 10~15mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,32,42,51|5",
+      "challenge": "EC5x1",
+      "timeTheorems": 147,
+      "duration": "10~15mins",
+      "ipGoal": "750",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 12
+      }
+    },
+    {
+      "id": "planner-13",
+      "title": "Complete EC1x3",
+      "description": "EC1x3 : Recommended : 147TT , Average Time : 2mins , TS62 is now unlocked and speeds up Replicanti.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,32,33,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|1",
+      "challenge": "EC1x3",
+      "timeTheorems": 147,
+      "duration": "2mins",
+      "ipGoal": "2200",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 13
+      }
+    },
+    {
+      "id": "planner-14",
+      "title": "Add TS62 into your EP farming",
+      "description": "Add TS62 into your EP farming, Farm to 155TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 14
+      }
+    },
+    {
+      "id": "planner-15",
+      "title": "Complete EC3x2",
+      "description": "EC3x2 : Recommended : 155TT , Average Time : 10~15mins , Farm requirement with TS73 path then respec after buying EC3.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,162,171|3",
+      "challenge": "EC3x2",
+      "timeTheorems": 155,
+      "duration": "10~15mins",
+      "ipGoal": "675",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 15
+      }
+    },
+    {
+      "id": "planner-16",
+      "title": "Farm to 157TT",
+      "description": "Farm to 157TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 16
+      }
+    },
+    {
+      "id": "planner-17",
+      "title": "Complete EC2x2",
+      "description": "EC2x2 : Recommended : 157TT , Average Time : 5~10mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171|2",
+      "challenge": "EC2x2",
+      "timeTheorems": 157,
+      "duration": "5~10mins",
+      "ipGoal": "1150",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 17
+      }
+    },
+    {
+      "id": "planner-18",
+      "title": "Farm to 160 or 163TT",
+      "description": "Farm to 160 or 163TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 18
+      }
+    },
+    {
+      "id": "planner-19",
+      "title": "Complete EC6x1",
+      "description": "EC6x1 : Require : 160TT , Average Time : 25~45mins , 163TT allows for TS21 and makes this challenge easier.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,33,42,51,61,62,72,82,92,102,111,121,131,141|6",
+      "challenge": "EC6x1",
+      "timeTheorems": 160,
+      "duration": "25~45mins",
+      "ipGoal": "850",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 19
+      }
+    },
+    {
+      "id": "planner-20",
+      "title": "Farm to 80000 Eternities (Farm to 163TT if you did not earlier)",
+      "description": "Farm to 80000 Eternities (Farm to 163TT if you did not earlier)",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 20
+      }
+    },
+    {
+      "id": "planner-21",
+      "title": "Complete EC1x4",
+      "description": "EC1x4 : Recommended : 163TT , Average Time : 2~3mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|1",
+      "challenge": "EC1x4",
+      "timeTheorems": 163,
+      "duration": "2~3mins",
+      "ipGoal": "2400",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 21
+      }
+    },
+    {
+      "id": "planner-22",
+      "title": "Complete EC3x3",
+      "description": "EC3x3 : Recommended : 163TT , Average Time : 8~12mins , Farm requirement with TS73 path then respec after buying EC3.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|3",
+      "challenge": "EC3x3",
+      "timeTheorems": 163,
+      "duration": "8~12mins",
+      "ipGoal": "750",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 22
+      }
+    },
+    {
+      "id": "planner-23",
+      "title": "Farm to 166TT",
+      "description": "Farm to 166TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 23
+      }
+    },
+    {
+      "id": "planner-24",
+      "title": "Complete EC7x1",
+      "description": "EC7x1 : Require : 166TT , Average Time : 2~3mins, e500000AM can be farmed with challenge setup.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,32,42,51,61,62,71,81,91,101,111|7",
+      "challenge": "EC7x1",
+      "timeTheorems": 166,
+      "duration": "2~3mins",
+      "ipGoal": "2000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 24
+      }
+    },
+    {
+      "id": "planner-25",
+      "title": "Farm to 170 or 173TT",
+      "description": "Farm to 170 or 173TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 25
+      }
+    },
+    {
+      "id": "planner-26",
+      "title": "Complete EC4x2",
+      "description": "EC4x2 : Recommended : 170TT , Average Time : 15~25mins , 172TT / 173TT allows for TS33 / S62 and makes this challenge faster.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,123,133,143,151,162,171|4",
+      "challenge": "EC4x2",
+      "timeTheorems": 170,
+      "duration": "15~25mins",
+      "ipGoal": "3300",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 26
+      }
+    },
+    {
+      "id": "planner-27",
+      "title": "Farm to 110k Eternities",
+      "description": "Farm to 110k Eternities then Farm to 176TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 27
+      }
+    },
+    {
+      "id": "planner-28",
+      "title": "Complete EC4x3",
+      "description": "EC4x3 : Recommended : 175TT , Average Time : 15~20mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,33,42,51,61,62,73,83,93,103,111,123,133,143,151,162,171|4",
+      "challenge": "EC4x3",
+      "timeTheorems": 175,
+      "duration": "15~20mins",
+      "ipGoal": "3850",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 28
+      }
+    },
+    {
+      "id": "planner-29",
+      "title": "Complete EC6x2",
+      "description": "EC6x2 : Recommended : 176TT , Average Time : 12~20mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,32,42,51,61,62,72,82,92,102,111,121,131,141,151,162|6",
+      "challenge": "EC6x2",
+      "timeTheorems": 176,
+      "duration": "12~20mins",
+      "ipGoal": "1100",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 29
+      }
+    },
+    {
+      "id": "planner-30",
+      "title": "Complete EC1x5",
+      "description": "EC1x5 : Recommended : 176TT , Average Time : 3~5mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|1",
+      "challenge": "EC1x5",
+      "timeTheorems": 176,
+      "duration": "3~5mins",
+      "ipGoal": "2600",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 30
+      }
+    },
+    {
+      "id": "planner-31",
+      "title": "Farm to 182TT",
+      "description": "Farm to 182TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 31
+      }
+    },
+    {
+      "id": "planner-32",
+      "title": "Complete EC5x2",
+      "description": "EC5x2 : Require : 182TT , Average Time : 2~4mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111|5",
+      "challenge": "EC5x2",
+      "timeTheorems": 182,
+      "duration": "2~4mins",
+      "ipGoal": "1150",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 32
+      }
+    },
+    {
+      "id": "planner-33",
+      "title": "Complete EC2x3",
+      "description": "EC2x3 : Recommended : 182TT , Average Time : 3~5mins , Do a normal Active EP run and buy this at the end.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171|2",
+      "challenge": "EC2x3",
+      "timeTheorems": 182,
+      "duration": "3~5mins",
+      "ipGoal": "1325",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 33
+      }
+    },
+    {
+      "id": "planner-34",
+      "title": "Complete EC3x4",
+      "description": "EC3x4 : Recommended : 182TT , Average Time : 3~5mins, Farm to requirement with TS73 path then respec after buying EC3.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|3",
+      "challenge": "EC3x4",
+      "timeTheorems": 182,
+      "duration": "3~5mins",
+      "ipGoal": "825",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 34
+      }
+    },
+    {
+      "id": "planner-35",
+      "title": "Farm to 193TT",
+      "description": "Farm to 193TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 35
+      }
+    },
+    {
+      "id": "planner-36",
+      "title": "Complete EC7x2",
+      "description": "EC7x2 : Recommended : 193TT , Average Time : 1min , Farm to requirement with TS73 path then respec after buying EC7.",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141|7",
+      "challenge": "EC7x2",
+      "timeTheorems": 193,
+      "duration": "1min",
+      "ipGoal": "2530",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 36
+      }
+    },
+    {
+      "id": "planner-37",
+      "title": "Farm to 200TT",
+      "description": "Farm to 200TT",
+      "section": "Early challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 37
+      }
+    },
+    {
+      "id": "planner-38",
+      "title": "Complete EC5x3",
+      "description": "EC5x3 : Recommended : 200TT , Average Time : 3~5mins",
+      "section": "Early challenges",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,72,82,92,102,111,121,131,141|5",
+      "challenge": "EC5x3",
+      "timeTheorems": 200,
+      "duration": "3~5mins",
+      "ipGoal": "1550",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 38
+      }
+    },
+    {
+      "id": "planner-39",
+      "title": "Unlock EC8x1 with the TS133 trick",
+      "description": "EC8x1 Requirement farm : 7s autocrunch, at e3590ip change autocrunch to 60s and add in TS133 + TS143, BUY EC8x1 then respec\n\nThis is the EC8 trick to not use TS133 which slows replicanti by 10x until you need to do your final push. Use this in all EC8s to get replicanti and RG faster.",
+      "section": "EC8 and EC9",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,123|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 39
+      }
+    },
+    {
+      "id": "planner-41",
+      "title": "Complete EC8x1",
+      "description": "EC8x1 : Require : 200TT , Average Time : 30sec , 0RG , 9% RG Chance , All ID into ID1.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,123,133,143,151,162|8",
+      "challenge": "EC8x1",
+      "timeTheorems": 200,
+      "duration": "30sec",
+      "ipGoal": "1300",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 41
+      }
+    },
+    {
+      "id": "planner-42",
+      "title": "Complete EC3x5",
+      "description": "EC3x5 : Recommended : 200TT , Average Time : 4~6mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|3",
+      "challenge": "EC3x5",
+      "timeTheorems": 200,
+      "duration": "4~6mins",
+      "ipGoal": "900",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 42
+      }
+    },
+    {
+      "id": "planner-43",
+      "title": "Complete EC6x3",
+      "description": "EC6x3 : Recommended : 200TT , Average Time : 4~6mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,32,33,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|6",
+      "challenge": "EC6x3",
+      "timeTheorems": 200,
+      "duration": "4~6mins",
+      "ipGoal": "1350",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 43
+      }
+    },
+    {
+      "id": "planner-44",
+      "title": "Complete EC2x4",
+      "description": "EC2x4 : Recommended : 200TT , Average Time : 3~5mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171|2",
+      "challenge": "EC2x4",
+      "timeTheorems": 200,
+      "duration": "3~5mins",
+      "ipGoal": "1500",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 44
+      }
+    },
+    {
+      "id": "planner-45",
+      "title": "Farm to 215TT",
+      "description": "Farm to 215TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 45
+      }
+    },
+    {
+      "id": "planner-46",
+      "title": "Complete EC5x4",
+      "description": "EC5x4 : Recommended : 215TT , Average Time : 1~3mins , 214TT can work for EC5x4, 215TT is for EC7x3",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,32,42,51,61,62,72,82,92,102,111,121,131,141,151|5",
+      "challenge": "EC5x4",
+      "timeTheorems": 215,
+      "duration": "1~3mins",
+      "ipGoal": "1950",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 46
+      }
+    },
+    {
+      "id": "planner-47",
+      "title": "Complete EC7x3",
+      "description": "EC7x3 : Recommended : 215TT , Average Time : 30sec , Farm to requirement with TS73 path then respec after buying EC7.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,162|7",
+      "challenge": "EC7x3",
+      "timeTheorems": 215,
+      "duration": "30sec",
+      "ipGoal": "3060",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 47
+      }
+    },
+    {
+      "id": "planner-48",
+      "title": "Farm to 240TT",
+      "description": "Farm to 240TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 48
+      }
+    },
+    {
+      "id": "planner-49",
+      "title": "Complete EC2x5",
+      "description": "EC2x5 : Recommended : 240TT, Average Time : 3~6mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171|2",
+      "challenge": "EC2x5",
+      "timeTheorems": 240,
+      "duration": "3~6mins",
+      "ipGoal": "1675",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 49
+      }
+    },
+    {
+      "id": "planner-50",
+      "title": "Farm to 245TT+",
+      "description": "Farm to 245TT+",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 50
+      }
+    },
+    {
+      "id": "planner-51",
+      "title": "Complete EC5x5",
+      "description": "EC5x5 : Recommended : 245TT , Average Time : 1~3mins , 252TT can get TS31 + TS41 for full tree.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,32,33,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|5",
+      "challenge": "EC5x5",
+      "timeTheorems": 245,
+      "duration": "1~3mins",
+      "ipGoal": "2350",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 51
+      }
+    },
+    {
+      "id": "planner-52",
+      "title": "Complete EC4x4",
+      "description": "EC4x4 : Recommended : 245TT , Average Time : 10~25mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,123,133,143,151,161,162,171|4",
+      "challenge": "EC4x4",
+      "timeTheorems": 245,
+      "duration": "10~25mins",
+      "ipGoal": "4400",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 52
+      }
+    },
+    {
+      "id": "planner-53",
+      "title": "Farm to 264TT",
+      "description": "Farm to 264TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 53
+      }
+    },
+    {
+      "id": "planner-54",
+      "title": "Complete EC6x4",
+      "description": "EC6x4 : Recommended : 264TT , Average Time : 7~12mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|6",
+      "challenge": "EC6x4",
+      "timeTheorems": 264,
+      "duration": "7~12mins",
+      "ipGoal": "1600",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 54
+      }
+    },
+    {
+      "id": "planner-55",
+      "title": "Complete EC7x4",
+      "description": "EC7x4 : Recommended : 264TT , Average Time : 1~3mins",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,162,171|7",
+      "challenge": "EC7x4",
+      "timeTheorems": 264,
+      "duration": "1~3mins",
+      "ipGoal": "3590",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 55
+      }
+    },
+    {
+      "id": "planner-56",
+      "title": "Farm to 310TT",
+      "description": "Farm to 310TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 56
+      }
+    },
+    {
+      "id": "planner-57",
+      "title": "Complete EC8x2",
+      "description": "EC8x2 : Recommended : 310TT , Average Time : 2~4mins , 0RG , 9% RG Chance , All ID into ID1.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,123,133,143,151,161,162,171|8",
+      "challenge": "EC8x2",
+      "timeTheorems": 310,
+      "duration": "2~4mins",
+      "ipGoal": "2200",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 57
+      }
+    },
+    {
+      "id": "planner-58",
+      "title": "Farm to 1e40EP Eternity Upgrade",
+      "description": "Farm to 1e40EP Eternity Upgrade, roughly 320TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 58
+      }
+    },
+    {
+      "id": "planner-59",
+      "title": "Complete EC6x5",
+      "description": "EC6x5 : Recommended : 320TT+ , Average Time : 4~6mins , 1e40EP Eternity Upgrade required.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,72,82,92,102,111,121,131,141,151,161,162,171|6",
+      "challenge": "EC6x5",
+      "timeTheorems": 320,
+      "duration": "4~6mins",
+      "ipGoal": "1850",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 59
+      }
+    },
+    {
+      "id": "planner-60",
+      "title": "Add TS181 into your EP farming (remember to disable autocrunch)",
+      "description": "Add TS181 into your EP farming (remember to disable autocrunch), Farm to 370TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 60
+      }
+    },
+    {
+      "id": "planner-61",
+      "title": "Complete EC4x5",
+      "description": "EC4x5 : Recommended : 370TT , Average Time : 5sec , Can be done with TS71 path 7TT earlier.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,123,133,143,151,162,171,181|4",
+      "challenge": "EC4x5",
+      "timeTheorems": 370,
+      "duration": "5sec",
+      "ipGoal": "4950",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 61
+      }
+    },
+    {
+      "id": "planner-62",
+      "title": "Farm to 450TT",
+      "description": "Farm to 450TT, other options for EC8x3 and RG : 435TT = 6RG , 440TT = 5RG , 450TT = 4RG , 470TT = 3RG , 480TT = 2RG",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 62
+      }
+    },
+    {
+      "id": "planner-63",
+      "title": "Complete EC8x3",
+      "description": "EC8x3 : Recommended : 450TT , Average Time : 15~20mins , 4RG , 9% RG Chance , All ID into ID1 , Use EC8 trick of TS133.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,123,133,143,151,161,162,171,181|8",
+      "challenge": "EC8x3",
+      "timeTheorems": 450,
+      "duration": "15~20mins",
+      "ipGoal": "3100",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 63
+      }
+    },
+    {
+      "id": "planner-64",
+      "title": "Farm to 522TT",
+      "description": "Farm to 522TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 64
+      }
+    },
+    {
+      "id": "planner-65",
+      "title": "Complete EC9x1",
+      "description": "EC9X1 : Require : 522TT , Average Time : 30~40mins , Wait for Time Shards when crunches don't give more IP.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,22,32,42,51,61,73,83,93,103,111,121,131,141,151,161,162,171|9",
+      "challenge": "EC9x1",
+      "timeTheorems": 522,
+      "duration": "30~40mins",
+      "ipGoal": "1750",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 65
+      }
+    },
+    {
+      "id": "planner-66",
+      "title": "Farm to 575TT",
+      "description": "Farm to 575TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 66
+      }
+    },
+    {
+      "id": "planner-67",
+      "title": "Complete EC9x2",
+      "description": "EC9x2 : Recommended : 575TT , Average Time : 15~30mins , Wait for Time Shards when crunches don't give more IP.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171|9",
+      "challenge": "EC9x2",
+      "timeTheorems": 575,
+      "duration": "15~30mins",
+      "ipGoal": "2000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 67
+      }
+    },
+    {
+      "id": "planner-68",
+      "title": "Farm to 600TT",
+      "description": "Farm to 600TT, other options for EC8x4 and RG : 560TT = 11RG , 570TT = 9 RG , 580TT = 7RG , 590TT = 5RG , 600TT = 4RG",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 68
+      }
+    },
+    {
+      "id": "planner-69",
+      "title": "Complete EC8x4",
+      "description": "EC8x4 : Recommended : 600TT , Average Time : 15~20mins, 4RG , 9% RG Chance , All ID into ID1 , Use EC8 trick of TS133.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,42,51,61,62,73,83,93,103,111,123,133,143,151,161,162,171,181|8",
+      "challenge": "EC8x4",
+      "timeTheorems": 600,
+      "duration": "15~20mins",
+      "ipGoal": "4000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 69
+      }
+    },
+    {
+      "id": "planner-70",
+      "title": "Farm to 660TT",
+      "description": "Farm to 660TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 70
+      }
+    },
+    {
+      "id": "planner-71",
+      "title": "Complete EC9x3",
+      "description": "EC9x3 : Recommended : 660TT , Average Time : 12~20mins , Wait for Time Shards when crunches don't give more IP.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171|9",
+      "challenge": "EC9x3",
+      "timeTheorems": 660,
+      "duration": "12~20mins",
+      "ipGoal": "2250",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 71
+      }
+    },
+    {
+      "id": "planner-72",
+      "title": "Farm to 760TT",
+      "description": "Farm to 760TT",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 72
+      }
+    },
+    {
+      "id": "planner-73",
+      "title": "Complete EC9x4",
+      "description": "EC9x4 : Recommended : 760TT , Average Time : 7~15mins , Crunch a bit at the end for TS141.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181|9",
+      "challenge": "EC9x4",
+      "timeTheorems": 760,
+      "duration": "7~15mins",
+      "ipGoal": "2500",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 73
+      }
+    },
+    {
+      "id": "planner-74",
+      "title": "Farm to 825TT",
+      "description": "Farm to 825TT, other options for EC8x5 and RG : 750TT = 8RG , 780TT = 5RG , 815TT = 1RG , 825TT = 0RG",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 74
+      }
+    },
+    {
+      "id": "planner-75",
+      "title": "Complete EC8x5",
+      "description": "EC8x5 : Recommended : 825TT , Average Time : 30sec , 0RG , 9% RG Chance , All ID into ID1.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,123,133,143,151,161,162,171,181|8",
+      "challenge": "EC8x5",
+      "timeTheorems": 825,
+      "duration": "30sec",
+      "ipGoal": "4900",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 75
+      }
+    },
+    {
+      "id": "planner-76",
+      "title": "Farm to 830TT+",
+      "description": "Farm to 830TT+",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 76
+      }
+    },
+    {
+      "id": "planner-77",
+      "title": "Complete EC9x5",
+      "description": "EC9x5 : Recommended : 830TT , Average Time : 8~15mins , Crunch a bit at the end for TS141.",
+      "section": "EC8 and EC9",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181|9",
+      "challenge": "EC9x5",
+      "timeTheorems": 830,
+      "duration": "8~15mins",
+      "ipGoal": "2750",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 77
+      }
+    },
+    {
+      "id": "planner-78",
+      "title": "Farm to 858TT+",
+      "description": "Farm to 858TT+",
+      "section": "EC8 and EC9",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 78
+      }
+    },
+    {
+      "id": "planner-79",
+      "title": "Complete EC10x1",
+      "description": "EC10x1 : Require : 858TT , Average Time : 40~65mins , Farm Infinities inside EC10.",
+      "section": "EC10 and beyond",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,171,181|10",
+      "challenge": "EC10x1",
+      "timeTheorems": 858,
+      "duration": "40~65mins",
+      "ipGoal": "3000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 79
+      }
+    },
+    {
+      "id": "planner-80",
+      "title": "Complete EC7x5",
+      "description": "EC7x5 : Recommended : 858TT , Average Time : 30sec",
+      "section": "EC10 and beyond",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,162,171,181,193,214|7",
+      "challenge": "EC7x5",
+      "timeTheorems": 858,
+      "duration": "30sec",
+      "ipGoal": "4120",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 80
+      }
+    },
+    {
+      "id": "planner-81",
+      "title": "Farm to 1820TT+",
+      "description": "Farm to 1820TT+ , Use EP Tree and : 191 -> 212 -> 211        (All below challenges done with 110k Eternities)",
+      "section": "EC10 and beyond",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,212,211|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 81
+      }
+    },
+    {
+      "id": "planner-82",
+      "title": "Use the 1,292 TT farming tree",
+      "description": "At Total 1292TT : 191,193,212,214  -> 211 -> 213                   (More eternities will make EC10s and EC12s easier)",
+      "section": "EC10 and beyond",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,193,212,214,211,213|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 82
+      }
+    },
+    {
+      "id": "planner-83",
+      "title": "Complete EC10x2",
+      "description": "EC10x2 : Recommended : 1820TT , Average Time : 1min , Recommended to have 10M+ Infinities Banked",
+      "section": "EC10 and beyond",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,171,181,191,193,211,214|10",
+      "challenge": "EC10x2",
+      "timeTheorems": 1820,
+      "duration": "1min",
+      "ipGoal": "3300",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 83
+      }
+    },
+    {
+      "id": "planner-84",
+      "title": "Farm to 2050TT",
+      "description": "Farm to 2050TT",
+      "section": "EC10 and beyond",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 84
+      }
+    },
+    {
+      "id": "planner-85",
+      "title": "Get Popular Music",
+      "description": "Get Popular Music, run Active EP farm, get 180+ RG , disable galaxy autobuyer, crunch and buy all RG.",
+      "section": "EC10 and beyond",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 85
+      }
+    },
+    {
+      "id": "planner-86",
+      "title": "Complete EC10x3",
+      "description": "EC10x3 : Recommended : 2050TT , Average Time : 5min , Recommended to have 20M+ Infinities Banked",
+      "section": "EC10 and beyond",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,171,181,192,193,214|10",
+      "challenge": "EC10x3",
+      "timeTheorems": 2050,
+      "duration": "5min",
+      "ipGoal": "3600",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 86
+      }
+    },
+    {
+      "id": "planner-87",
+      "title": "Update your tree at 2142TT",
+      "description": "At Total 2142TT : 193,214,228,234",
+      "section": "EC10 and beyond",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,193,214,228,234|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 87
+      }
+    },
+    {
+      "id": "planner-88",
+      "title": "Update your tree at 2272TT",
+      "description": "At Total 2272TT : 191,212,223,232 -> 211 -> 193 -> 214 -> 213",
+      "section": "EC10 and beyond",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,212,223,232,211,193,214,213|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 88
+      }
+    },
+    {
+      "id": "planner-89",
+      "title": "Farm to 2740TT+",
+      "description": "Farm to 2740TT+",
+      "section": "EC10 and beyond",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 89
+      }
+    },
+    {
+      "id": "planner-90",
+      "title": "Complete EC10x4",
+      "description": "EC10x4 : Recommended : 2740TT+ , Average Time : 2~3mins , Recommended to have 35M+ Infinities Banked",
+      "section": "EC10 and beyond",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,171,181,191,192,193,211,213,214|10",
+      "challenge": "EC10x4",
+      "timeTheorems": 2740,
+      "duration": "2~3mins",
+      "ipGoal": "3900",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 90
+      }
+    },
+    {
+      "id": "planner-91",
+      "title": "Complete EC11x1",
+      "description": "EC11x1 : Recommended : 2886TT+ , Average Time : 2mins",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,121,131,141,151,161,162,171,181,191,193,211,212,213,222,231|11",
+      "challenge": "EC11x1",
+      "timeTheorems": 2886,
+      "duration": "2mins",
+      "ipGoal": "450",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 91
+      }
+    },
+    {
+      "id": "planner-92",
+      "title": "Update your tree at 3542TT",
+      "description": "At Total 3542TT : 191,192,193,211,212,214,223,232",
+      "section": "Final challenges",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,192,193,211,212,214,223,232|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 92
+      }
+    },
+    {
+      "id": "planner-93",
+      "title": "Complete EC10x5",
+      "description": "EC10x5 :  Recommended : 3615TT+ , Average Time : 2~3mins , Recommended to have 45M+ Infinities Banked",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,122,132,142,151,161,171,181,192,193,213,214,225,233|10",
+      "challenge": "EC10x5",
+      "timeTheorems": 3615,
+      "duration": "2~3mins",
+      "ipGoal": "4200",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 93
+      }
+    },
+    {
+      "id": "planner-94",
+      "title": "Update your tree at 3712TT",
+      "description": "At Total 3712TT : 191,193,211,212,214,222,224,232",
+      "section": "Final challenges",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,193,211,212,214,222,224,232|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 94
+      }
+    },
+    {
+      "id": "planner-95",
+      "title": "Update your tree at 3925TT",
+      "description": "At Total 3925TT : 191,192,201,212,223,232 -> 211 -> 193 -> 214 -> 213     (201 to use TS72 path)",
+      "section": "Final challenges",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,192,201,72,82,92,102,212,223,232,211,193,214,213|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 95
+      }
+    },
+    {
+      "id": "planner-96",
+      "title": "Farm to 4870TT+",
+      "description": "Farm to 4870TT+",
+      "section": "Final challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 96
+      }
+    },
+    {
+      "id": "planner-97",
+      "title": "Complete EC11x2",
+      "description": "EC11x2 : Recommended : 4870TT+ , Average Time : 5mins",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,71,81,91,101,111,122,132,142,151,161,162,171,181,191,192,193,211,213,222,225,231,233|11",
+      "challenge": "EC11x2",
+      "timeTheorems": 4870,
+      "duration": "5mins",
+      "ipGoal": "650",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 97
+      }
+    },
+    {
+      "id": "planner-98",
+      "title": "Update your tree at 4945TT",
+      "description": "At Total 4945TT : 191,192,201,211,212,222,224,232 -> 193 -> 214 -> 213 -> 228 -> 234 -> 226      (201 to use TS72 Path)",
+      "section": "Final challenges",
+      "kind": "study",
+      "studies": "11,21,22,31,32,33,41,42,51,61,62,73,83,93,103,111,121,131,141,151,161,162,171,181,191,192,201,72,82,92,102,211,212,222,224,232,193,214,213,228,234,226|0",
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 98
+      }
+    },
+    {
+      "id": "planner-99",
+      "title": "Farm to 5907TT+",
+      "description": "Farm to 5907TT+",
+      "section": "Final challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 99
+      }
+    },
+    {
+      "id": "planner-100",
+      "title": "Complete EC11x3",
+      "description": "EC11x3 : Recommended : 5950TT , Average Time : 7mins",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,71,81,91,101,111,122,132,142,151,161,162,171,181,191,192,193,211,212,213,222,223,225,231,233|11",
+      "challenge": "EC11x3",
+      "timeTheorems": 5950,
+      "duration": "7mins",
+      "ipGoal": "850",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 100
+      }
+    },
+    {
+      "id": "planner-101",
+      "title": "Complete EC11x4",
+      "description": "EC11x4 : Recommended : 5950TT , Average Time : 20~30mins",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,71,81,91,101,111,123,133,143,151,161,162,171,181,191,192,193,211,212,213,222,223,225,231,233|11",
+      "challenge": "EC11x4",
+      "timeTheorems": 5950,
+      "duration": "20~30mins",
+      "ipGoal": "1050",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 101
+      }
+    },
+    {
+      "id": "planner-102",
+      "title": "Complete EC11x5",
+      "description": "EC11x5 : Recommended : 5950TT , Average Time : ±1h45mins",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,71,81,91,101,111,123,133,143,151,161,162,171,181,191,192,193,211,212,213,222,223,225,231,233|11",
+      "challenge": "EC11x5",
+      "timeTheorems": 5950,
+      "duration": "±1h45mins",
+      "ipGoal": "1250",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 102
+      }
+    },
+    {
+      "id": "planner-103",
+      "title": "Farm to 9800TT and get at least 100M Banked Infinities",
+      "description": "Farm to 9800TT and get at least 100M Banked Infinities",
+      "section": "Final challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 103
+      }
+    },
+    {
+      "id": "planner-104",
+      "title": "Complete EC12x1",
+      "description": "EC12x1 : Recommended : 9800TT , Average Time : 1sec",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,73,83,93,103,111,122,132,142,151,161,162,171,181,191,193,211,212,213,214,222,224,226,227,232,234|12",
+      "challenge": "EC12x1",
+      "timeTheorems": 9800,
+      "duration": "1sec",
+      "ipGoal": "110000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 104
+      }
+    },
+    {
+      "id": "planner-105",
+      "title": "Complete EC12x2",
+      "description": "EC12x2 : Recommended : 9800TT , Average Time : 10~15sec",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,73,83,93,103,111,122,132,142,151,161,162,171,181,191,193,211,212,213,214,222,224,226,227,232,234|12",
+      "challenge": "EC12x2",
+      "timeTheorems": 9800,
+      "duration": "10~15sec",
+      "ipGoal": "122000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 105
+      }
+    },
+    {
+      "id": "planner-106",
+      "title": "Farm to 10750TT",
+      "description": "Farm to 10750TT",
+      "section": "Final challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 106
+      }
+    },
+    {
+      "id": "planner-107",
+      "title": "Complete EC12x3",
+      "description": "EC12x3 : Recommended : 10750TT , Average Time : 80~100sec",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,73,83,93,103,111,122,132,142,151,161,162,171,181,191,193,211,212,213,214,222,224,226,227,232,234|12",
+      "challenge": "EC12x3",
+      "timeTheorems": 10750,
+      "duration": "80~100sec",
+      "ipGoal": "134000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 107
+      }
+    },
+    {
+      "id": "planner-108",
+      "title": "Farm to 11200TT",
+      "description": "Farm to 11200TT, Get \"What do I have to do to get rid of you\" and 150M Banked Infinities",
+      "section": "Final challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 108
+      }
+    },
+    {
+      "id": "planner-109",
+      "title": "Complete EC12x4",
+      "description": "EC12x4 : Recommended : 11200TT , Average Time : 220~250sec",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,73,83,93,103,111,122,132,142,151,161,162,171,181,191,193,211,212,213,214,222,224,226,227,232,234|12",
+      "challenge": "EC12x4",
+      "timeTheorems": 11200,
+      "duration": "220~250sec",
+      "ipGoal": "146000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 109
+      }
+    },
+    {
+      "id": "planner-110",
+      "title": "Farm to 12350TT",
+      "description": "Farm to 12350TT",
+      "section": "Final challenges",
+      "kind": "milestone",
+      "studies": null,
+      "challenge": null,
+      "timeTheorems": null,
+      "duration": null,
+      "ipGoal": null,
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 110
+      }
+    },
+    {
+      "id": "planner-111",
+      "title": "Complete EC12x5",
+      "description": "EC12x5 : Recommended : 12350TT , Average Time : 190~198sec",
+      "section": "Final challenges",
+      "kind": "challenge",
+      "studies": "11,21,22,31,32,41,42,51,61,62,73,83,93,103,111,122,132,142,151,161,162,171,181,191,193,211,212,213,214,222,224,226,227,232,234|12",
+      "challenge": "EC12x5",
+      "timeTheorems": 12350,
+      "duration": "190~198sec",
+      "ipGoal": "158000",
+      "source": {
+        "sheet": "EC Planner v2.6",
+        "row": 111
+      }
+    }
+  ]
+}
