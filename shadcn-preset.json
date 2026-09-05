@@ -1,0 +1,16 @@
+{
+  "code": "b37arxUUC",
+  "version": "b",
+  "base": "base",
+  "style": "nova",
+  "baseColor": "mauve",
+  "theme": "fuchsia",
+  "chartColor": "indigo",
+  "iconLibrary": "lucide",
+  "font": "inter",
+  "fontHeading": "inherit",
+  "radius": "default",
+  "menuAccent": "subtle",
+  "menuColor": "default",
+  "url": "https://ui.shadcn.com/create?preset=b37arxUUC"
+}
